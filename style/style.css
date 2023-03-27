@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#top-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #0264cf;
+  position: relative;
+  z-index: 5;
+  height: 50px;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+.nav-link {
+  padding: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0264cf;
+}
+.nav-link.nav-link:after {
+  content: "  ";
+  font-weight: bold;
+  color: #0264cf;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.nav-link.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#nav-link {
+  color: #0264cf;
+}
+
+.climate {
+  color: #0264cf;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+img {
+  width: 170px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.img-carousel {
+  height: 400px;
+  width: 300px;
+}
+
+.container1 {
+  background-color: #151616;
+  padding: 40px;
+  text-align: center;
+}
+.container1 .d-flex {
+  align-items: center;
+  justify-content: center;
+}
+.container1 .d-flex .status {
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+  max-width: 244px;
+  margin-left: 40px;
+}
+.container1 .d-flex .status p {
+  color: white;
+}
+.container1 .d-flex .status h2 {
+  font-size: 25px;
+}
+.container1 .d-flex .picture {
+  width: 227px;
+}
+
+/*# sourceMappingURL=style.css.map */

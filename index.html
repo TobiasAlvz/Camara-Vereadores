@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câmara - munincipal de Tavares</title>
+    <!-- Animation Lib -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <section id="top-head">
+      <div class="today">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-clock"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+          />
+          <path
+            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+          />
+        </svg>
+        <span id="today"></span>
+      </div>
+      <div>idajfijf</div>
+    </section>
+
+    <header class="container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top"
+      >
+        <div
+          class="container d-flex justify-content-around align-content-around"
+        >
+          <img src="img/logo-full-removebg-preview (1).png" alt="" srcset="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav d-flex mb- mb-lg-0">
+              <li class="nav-item mb-0">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0"
+                  active
+                  pb-0
+                  aria-current="page"
+                  href="#inicio"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >A Câmara</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#comissoes">Comissões</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#exVereadores"
+                      >Ex-Vereadores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#mesaDiretora"
+                      >Mesa Diretora</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#regimentoInterno"
+                      >Regimento Interno</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores">Vereadores</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-toggle="dropdown"
+                  >Comissões</a
+                >
+                <ul
+                  class="dropdown-menu hover"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#comissoes"
+                      >Agenda da Câmara</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#exVereadores"
+                      >Atas das Sessões</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#mesaDiretora"
+                      >Código de Postura</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#regimentoInterno"
+                      >Folha de Pessoal</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores"
+                      >Glossário da Transparência</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores"
+                      >Lei de Acesso a Informação</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores">Lei Orgânica</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores"
+                      >Leis Municipais</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores"
+                      >Licitações e Contratos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores">Projetos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores"
+                      >Requerimentos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores">SIC</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#vereadores"
+                      >Transparência Fiscal</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-toggle="dropdown"
+                >
+                  Informativos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#diarioOficial"
+                      >Diário Oficial</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#eventos">Eventos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#noticias">Notícias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#ouvidoria">Ouvidoria</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#perguntasFrequentes"
+                      >Perguntas Frequentes</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  id="nav-link"
+                  class="nav-link active me-3 pb-0"
+                  href="#faleConosco"
+                  >Fale Conosco</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="climate">
+            <span id="climate"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-info">
+          <img
+            src="img/tavares.jpg"
+            class="d-block w-100 img-carousel"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item bg-danger">
+          <img
+            src="img/Tavares_Camara02.png"
+            class="d-block w-100 img-carousel"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="container container1">
+      <div class="d-flex align-items-center">
+        <img class="picture" src="img/thumb.jpg" alt="face" />
+        <div class="status">
+          <h2 class="mb">
+            Câmara de Tavares realiza a primeira sessão ordinária do ano de 2023
+          </h2>
+          <p class="mb">Quinta-Feira, 23 de Fevereiro de 2023</p>
+        </div>
+      </div>
+    </section>
+    <!-- Script animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
