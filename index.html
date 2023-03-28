@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Câmara - munincipal de Tavares</title>
-    <!-- Animation Lib -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Bootstrap Css -->
+    <title>Câmara Municipal de Tavares</title>
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style/style.css" />
   </head>
+
   <body>
     <section id="top-head">
       <div class="today">
@@ -37,13 +36,11 @@
         </svg>
         <span id="today"></span>
       </div>
-      <div>idajfijf</div>
+      <div></div>
     </section>
 
     <header class="container">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div
           class="container d-flex justify-content-around align-content-around"
         >
@@ -240,59 +237,95 @@
       </nav>
     </header>
 
-    <div
-      id="carouselExampleInterval"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="5000"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active bg-info">
-          <img
-            src="img/tavares.jpg"
-            class="d-block w-100 img-carousel"
-            alt="..."
-          />
+    <div class="carousel">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide h-10"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-inner h-50">
+          <div class="carousel-item active bg-info h-75">
+            <img
+              src="img/tavares.jpg"
+              class="d-block w-100 img-fluid"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item bg-danger">
+            <img
+              src="img/Tavares_Camara02.png"
+              class="d-block w-100 img-fluid"
+              alt="..."
+            />
+          </div>
         </div>
-        <div class="carousel-item bg-danger">
-          <img
-            src="img/Tavares_Camara02.png"
-            class="d-block w-100 img-carousel"
-            alt="..."
-          />
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
-    <section class="container container1">
-      <div class="d-flex align-items-center">
-        <img class="picture" src="img/thumb.jpg" alt="face" />
-        <div class="status">
-          <h2 class="mb">
-            Câmara de Tavares realiza a primeira sessão ordinária do ano de 2023
-          </h2>
-          <p class="mb">Quinta-Feira, 23 de Fevereiro de 2023</p>
+    <section class="news-container">
+      <div class="card">
+        <div class="card-details">
+          <a href="https://example.com">
+            <p class="text-title">
+              Câmara de Tavares realiza a primeira sessão ordinária do ano de
+              2023
+            </p>
+          </a>
+          <p class="text-body">Quinta-Feira, 23 de Fevereiro de 2023</p>
         </div>
+        <button class="card-button">Saiba mais</button>
       </div>
+
+      <article class="news-item">
+        <div class="d-flex align-items-center">
+          <img class="news-picture" src="img/thumb.jpg" alt="Foto de notícia" />
+          <div class="news-details">
+            <a href="https://example.com">
+              <h2 class="news-title">
+                Câmara de Tavares realiza a primeira sessão ordinária do ano de
+                2023
+              </h2>
+            </a>
+            <p class="news-date">Quinta-feira, 23 de fevereiro de 2023</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-item">
+        <div class="d-flex align-items-center">
+          <img class="news-picture" src="img/edson.jpg" alt="Foto de notícia" />
+          <div class="news-details">
+            <a href="">
+              <h2 class="news-title">
+                José Edson Cordeiro toma posse como novo presidente da Câmara
+                Municipal de Tavares pelos próximos dois anos, biênio 2023-2024
+              </h2>
+            </a>
+            <p class="news-date">Segunda-feira, 2 de janeiro de 2023</p>
+          </div>
+        </div>
+      </article>
     </section>
+
     <!-- Script animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
