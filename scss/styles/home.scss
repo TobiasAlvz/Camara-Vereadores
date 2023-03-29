@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Rubik:wght@300&display=swap");
 
 // Variáveis
-$primary-color: #3b6ea9;
+$primary-color: #0264cf;
 $secondary-color: #f0f0f0;
 $font-family: "Open Sans", sans-serif;
 
@@ -36,12 +36,20 @@ a {
   z-index: 5;
   height: 50px;
 
+  .bi {
+    color: wheat;
+  }
+
+  #today {
+    color: white;
+  }
+
   #nav-link {
     color: #fff;
   }
 
-  .climate {
-    color: white;
+  #climate {
+    color: $primary-color;
   }
 }
 
@@ -200,7 +208,6 @@ img {
     }
 
     .news-title {
-      line-height: normal;
       font-size: 22px;
       font-weight: 700;
       color: $primary-color;
@@ -217,7 +224,7 @@ img {
     }
 
     @media only screen and (max-width: 480px) {
-      padding: 5px;
+      padding: 10px;
 
       .news-item {
         padding: 5px;
