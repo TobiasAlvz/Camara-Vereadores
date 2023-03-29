@@ -215,11 +215,17 @@ img {
   align-items: center;
   flex-wrap: wrap;
 }
+.veriadores h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+}
 .veriadores .col-md-3 {
   margin: 5px;
   padding: 0;
   height: 75%;
-  width: 22%;
+  width: 25%;
 }
 .veriadores .col-md-3 .card {
   border: 1px solid #ccc;
@@ -249,6 +255,15 @@ img {
 .veriadores .col-md-3 .card:hover img {
   transform: scale(1.1);
 }
+.veriadores .col-md-3 .card:hover:after {
+  opacity: 1;
+}
+.veriadores .col-md-3 .card:hover .card-body {
+  transform: translateY(-50%);
+}
+.veriadores .col-md-3 .card:hover .card-title {
+  color: #0264cf;
+}
 .veriadores .col-md-3 .card:after {
   content: "";
   position: absolute;
@@ -260,14 +275,15 @@ img {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.veriadores .col-md-3 .card:hover:after {
-  opacity: 1;
+@media screen and (max-width: 768px) {
+  .veriadores .col-md-3 {
+    width: 25%;
+  }
 }
-.veriadores .col-md-3 .card:hover .card-body {
-  transform: translateY(-50%);
-}
-.veriadores .col-md-3 .card:hover .card-title {
-  color: #0264cf;
+@media screen and (max-width: 576px) {
+  .veriadores .col-md-3 {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
