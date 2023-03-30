@@ -515,6 +515,8 @@ section {
         .col-md-3 {
           flex: 0 0 100%;
           max-width: 100%;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -523,6 +525,8 @@ section {
   @media only screen and (max-width: 768px) {
     .docs {
       padding: 30px;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
