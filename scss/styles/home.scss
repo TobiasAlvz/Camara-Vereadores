@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Rubik:wght@300&display=swap");
 
 // Variáveis
+
+$card-width: 210px;
+$card-height: 254px;
 $primary-color: #0264cf;
 $secondary-color: #f0f0f0;
 $font-family: "Open Sans", sans-serif;
@@ -265,10 +268,11 @@ img {
     margin: 5px;
     padding: 0;
     height: auto;
-    min-height: 300px;
+
     width: 25%;
 
     .card {
+      cursor: pointer;
       border: 1px solid #ccc;
       border-radius: 10px;
       overflow: hidden;
@@ -340,6 +344,128 @@ img {
     .col-md-3 {
       height: 250px;
       width: 110px;
+    }
+  }
+}
+
+.camara-digital {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  margin-bottom: 30px;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .card-text {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .list-group-item {
+      border: none;
+      padding: 0.5rem 1rem;
+    }
+
+    .card-link {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  }
+}
+
+.pluss {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: $primary-color;
+
+  .card {
+    width: $card-width;
+    height: $card-height;
+    border-radius: 4px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.4em;
+
+    p {
+      height: 100%;
+      flex: 1;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.5s;
+      background: #fff;
+      border: 1px solid $secondary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+
+      span {
+        min-width: 14em;
+        padding: 0.5em;
+        text-align: center;
+        transform: rotate(-90deg);
+        transition: all 0.5s;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: $secondary-color;
+      }
+
+      &:hover {
+        flex: 4;
+      }
+
+      &:hover span {
+        transform: rotate(0);
+      }
     }
   }
 }
