@@ -419,7 +419,7 @@ section .docs .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
 }
 section .docs .row .col-md-3 {
   padding: 0 10px;
@@ -437,19 +437,18 @@ section .docs .row .col-md-3 .card .card-body {
   color: #3d3c3c;
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section .docs .row .col-md-3 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 @media only screen and (max-width: 768px) {
-  section .docs {
+  section .docs .docs {
     padding: 30px;
-    justify-content: center;
-    align-items: center;
+  }
+  section .docs .row .col-md-3 {
+    max-width: 100%;
   }
 }
 

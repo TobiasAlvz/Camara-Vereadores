@@ -488,7 +488,7 @@ section {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: stretch;
+      align-items: center;
 
       .col-md-3 {
         padding: 0 10px;
@@ -510,23 +510,25 @@ section {
       }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       .row {
         .col-md-3 {
-          flex: 0 0 100%;
-          max-width: 100%;
-          justify-content: center;
-          align-items: center;
+          flex: 0 0 50%;
+          max-width: 50%;
         }
       }
     }
-  }
 
-  @media only screen and (max-width: 768px) {
-    .docs {
-      padding: 30px;
-      justify-content: center;
-      align-items: center;
+    @media only screen and (max-width: 768px) {
+      .docs {
+        padding: 30px;
+      }
+
+      .row {
+        .col-md-3 {
+          max-width: 100%;
+        }
+      }
     }
   }
 }
