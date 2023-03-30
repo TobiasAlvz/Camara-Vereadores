@@ -16,6 +16,10 @@ $font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
