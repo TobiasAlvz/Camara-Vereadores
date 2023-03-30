@@ -31,4 +31,16 @@ fetch(url)
   })
   .catch((error) => console.error(error));
 
-// 30ca3890badaa205e3bbb1d58382791a
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "scale(1.05)";
+    card.style.transition = "all 0.2s ease-in-out";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "scale(1)";
+    card.style.transition = "all 0.2s ease-in-out";
+  });
+});
