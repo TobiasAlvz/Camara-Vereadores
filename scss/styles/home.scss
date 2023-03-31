@@ -164,12 +164,15 @@ img {
     margin-bottom: 20px;
     width: 100%;
 
+    .text-title1 {
+      line-height: 1;
+    }
+
     .text-title {
       font-size: 35px;
       font-weight: 700;
       color: $primary-color;
       margin-bottom: 10px;
-      line-height: 1;
     }
 
     .text-body {

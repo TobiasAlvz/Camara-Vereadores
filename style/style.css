@@ -141,12 +141,14 @@ img {
   margin-bottom: 20px;
   width: 100%;
 }
+.news-container .card .text-title1 {
+  line-height: 1;
+}
 .news-container .card .text-title {
   font-size: 35px;
   font-weight: 700;
   color: #0264cf;
   margin-bottom: 10px;
-  line-height: 1;
 }
 .news-container .card .text-body {
   font-size: 14px;
