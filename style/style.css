@@ -146,11 +146,12 @@ img {
   font-weight: 700;
   color: #0264cf;
   margin-bottom: 10px;
+  line-height: 1;
 }
 .news-container .card .text-body {
   font-size: 14px;
   color: gray;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .news-container .card .card-button {
   background-color: #0264cf;
@@ -200,9 +201,6 @@ img {
   }
 }
 @media only screen and (max-width: 480px) {
-  .news-container .news-item {
-    padding: 10px;
-  }
   .news-container .news-item .news-item {
     padding: 5px;
     width: 100%;
@@ -214,6 +212,7 @@ img {
   }
   .news-container .news-item .news-title {
     font-size: 20px;
+    line-height: 0;
   }
   .news-container .news-item .news-date {
     font-size: 12px;
