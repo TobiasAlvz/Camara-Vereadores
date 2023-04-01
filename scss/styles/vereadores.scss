@@ -1,0 +1,61 @@
+.container {
+  .row {
+    .col-md-3 {
+      img {
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    
+    .col-md-9 {
+      h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #1f4788;
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+      
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        color: #666;
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+      
+      a {
+        color: #fff;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      
+      .badge {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.1);
+        }
+        
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

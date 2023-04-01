@@ -1,0 +1,71 @@
+// Cabeçalho
+#top-head {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #0264cf;
+
+  z-index: 5;
+  height: 50px;
+
+  .bi {
+    color: wheat;
+  }
+
+  #today {
+    color: white;
+  }
+
+  #nav-link {
+    color: #fff;
+  }
+
+  #climate {
+    color: $primary-color;
+  }
+}
+
+// Menu de navegação
+#nav-link {
+  color: #0264cf;
+}
+.nav-link {
+  width: 100%;
+  font-weight: bold;
+  color: #0264cf;
+  font-size: 18px;
+  padding: 0 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #0264cf;
+  }
+
+  &.active {
+    font-weight: bold;
+  }
+}
+
+.dropdown-menu {
+  background-color: whitesmoke;
+  border: 1px solid #0056b3;
+
+  .dropdown-item {
+    color: $primary-color;
+    padding: 10px 20px;
+    transition: background-color 0.4s ease-in-out;
+
+    &:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  transition: 0.9s ease-in-out;
+}

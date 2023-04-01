@@ -1,0 +1,23 @@
+$card-width: 210px;
+$card-height: 254px;
+$primary-color: #0264cf;
+$secondary-color: #f0f0f0;
+$font-family: "Open Sans", sans-serif;
+
+// Estilos globais
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+a {
+  position: relative;
+  display: inline-block;
+  color: $primary-color;
+  text-decoration: none;
+}
