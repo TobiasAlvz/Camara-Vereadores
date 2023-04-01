@@ -24,11 +24,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 a {
-  position: relative;
-  display: inline-block;
-  color: $primary-color;
   text-decoration: none;
 }
 
@@ -43,6 +39,13 @@ a {
   position: relative;
   z-index: 5;
   height: 50px;
+
+  a {
+    position: relative;
+    display: inline-block;
+    color: $primary-color;
+    text-decoration: none;
+  }
 
   .bi {
     color: wheat;
