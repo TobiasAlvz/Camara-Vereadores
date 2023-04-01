@@ -457,6 +457,7 @@ img {
       font-weight: bold;
 
       span {
+        color: #0056b3;
         min-width: 14em;
         padding: 0.5em;
         text-align: center;
@@ -464,7 +465,6 @@ img {
         transition: all 0.5s;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        color: $secondary-color;
       }
 
       &:hover {
