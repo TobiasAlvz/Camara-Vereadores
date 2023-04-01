@@ -15,9 +15,6 @@ html {
 }
 
 a {
-  position: relative;
-  display: inline-block;
-  color: #0264cf;
   text-decoration: none;
 }
 
@@ -31,6 +28,12 @@ a {
   position: relative;
   z-index: 5;
   height: 50px;
+}
+#top-head a {
+  position: relative;
+  display: inline-block;
+  color: #0264cf;
+  text-decoration: none;
 }
 #top-head .bi {
   color: wheat;
