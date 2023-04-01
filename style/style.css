@@ -483,17 +483,17 @@ img {
   justify-content: center;
   align-items: center;
 }
-.docs .docs .row .col-md-3 {
-  padding: 0 10px;
+.docs .docs .row .col-md-4 {
+  padding: 0 5px;
   margin-bottom: 30px;
 }
-.docs .docs .row .col-md-3 .card {
+.docs .docs .row .col-md-4 .card {
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
-.docs .docs .row .col-md-3 .card .card-body {
+.docs .docs .row .col-md-4 .card .card-body {
   font-size: 18px;
   font-weight: bold;
   color: #3d3c3c;
@@ -501,16 +501,16 @@ img {
 }
 @media only screen and (max-width: 992px) {
   .docs .docs .row .col-md-3 {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 70%;
+    max-width: 70%;
   }
 }
 @media only screen and (max-width: 768px) {
   .docs .docs .docs {
-    padding: 30px;
+    padding: 20px;
   }
   .docs .docs .row .col-md-3 {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
