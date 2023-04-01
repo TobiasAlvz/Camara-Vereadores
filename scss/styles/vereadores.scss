@@ -1,59 +1,68 @@
-.container {
-  .row {
-    .col-md-3 {
-      img {
-        border-radius: 50%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        transition: all 0.3s ease;
-        
-        &:hover {
-          transform: scale(1.1);
+section {
+  background-color: #f7f7f7;
+  padding: 50px 10px;
+
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 30px;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .col-md-2 {
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          max-height: 700px; /* Define uma altura máxima para a imagem */
+          object-fit: cover; /* Ajusta a imagem ao tamanho do container */
         }
       }
-    }
-    
-    .col-md-9 {
-      h2 {
-        font-weight: bold;
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: #1f4788;
-        margin-top: 1rem;
-        margin-bottom: 0;
-      }
-      
-      p {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
+
+      .col-md-9 {
         display: flex;
-        align-items: center;
-        color: #666;
-        svg {
-          margin-right: 0.5rem;
+        flex-direction: column;
+
+        .d-flex {
+          align-items: center;
+          margin-bottom: 10px;
+
+          .fas {
+            font-size: 20px;
+            color: #6c757d;
+          }
+
+          p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #343a40;
+          }
         }
-      }
-      
-      a {
-        color: #fff;
-        transition: all 0.3s ease;
-        
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-      
-      .badge {
-        padding: 0.5rem;
-        font-size: 1.5rem;
-        margin-right: 0.5rem;
-        transition: all 0.3s ease;
-        
-        &:hover {
-          transform: scale(1.1);
-        }
-        
-        &:first-of-type {
-          margin-left: 0;
+
+        .badge {
+          font-size: 18px;
+          padding: 6px 12px;
+          border-radius: 20px;
+          text-decoration: none;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: translateY(-2px);
+          }
+
+          &.text-white {
+            color: #fff;
+          }
+
+          i {
+            font-size: 20px;
+            margin-right: 5px;
+          }
         }
       }
     }
