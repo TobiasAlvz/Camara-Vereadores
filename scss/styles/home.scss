@@ -16,10 +16,6 @@ $font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -33,13 +29,14 @@ a {
 
 // Cabeçalho
 #top-head {
+  position: sticky;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   background-color: #0264cf;
-  position: relative;
+
   z-index: 5;
   height: 50px;
 
