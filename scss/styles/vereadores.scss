@@ -24,18 +24,22 @@ section {
       justify-content: space-between;
 
       .col-md-2 {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+
         img {
           display: block;
-          max-width: 100%;
+          width: 50%;
           height: auto;
-          max-height: 700px; /* Define uma altura máxima para a imagem */
-          object-fit: cover; /* Ajusta a imagem ao tamanho do container */
+          object-fit: cover;
         }
       }
 
       .col-md-9 {
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 20px;
 
         .d-flex {
           align-items: center;
@@ -44,6 +48,7 @@ section {
           .fas {
             font-size: 20px;
             color: #6c757d;
+            margin-right: 10px;
           }
 
           p {
@@ -73,6 +78,29 @@ section {
             font-size: 20px;
             margin-right: 5px;
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      margin: auto;
+    }
+    .container {
+      padding: 20px;
+
+      .row {
+        flex-direction: column;
+
+        .col-md-2 {
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .col-md-9 {
+          max-width: 100%;
+          margin-bottom: 10px;
         }
       }
     }
