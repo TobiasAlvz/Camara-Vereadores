@@ -564,16 +564,21 @@ section .container .row {
   align-items: center;
   justify-content: space-between;
 }
+section .container .row .col-md-2 {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+}
 section .container .row .col-md-2 img {
   display: block;
-  max-width: 100%;
+  width: 50%;
   height: auto;
-  max-height: 700px; /* Define uma altura máxima para a imagem */
-  object-fit: cover; /* Ajusta a imagem ao tamanho do container */
+  object-fit: cover;
 }
 section .container .row .col-md-9 {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
 }
 section .container .row .col-md-9 .d-flex {
   align-items: center;
@@ -582,6 +587,7 @@ section .container .row .col-md-9 .d-flex {
 section .container .row .col-md-9 .d-flex .fas {
   font-size: 20px;
   color: #6c757d;
+  margin-right: 10px;
 }
 section .container .row .col-md-9 .d-flex p {
   margin: 0;
@@ -605,6 +611,25 @@ section .container .row .col-md-9 .badge.text-white {
 section .container .row .col-md-9 .badge i {
   font-size: 20px;
   margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+  section img {
+    margin: auto;
+  }
+  section .container {
+    padding: 20px;
+  }
+  section .container .row {
+    flex-direction: column;
+  }
+  section .container .row .col-md-2 {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  section .container .row .col-md-9 {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
