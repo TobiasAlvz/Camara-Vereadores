@@ -1,0 +1,64 @@
+.dates {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 3rem;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    color: #333;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 1rem;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    thead {
+      th {
+        background-color: #f5f5f5;
+        border-bottom: 2px solid #ddd;
+      }
+    }
+
+    tbody {
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+    }
+
+    &.table-bordered {
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .mt-5 {
+    margin-top: 3rem;
+  }
+}

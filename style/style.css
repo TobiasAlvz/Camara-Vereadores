@@ -632,4 +632,52 @@ section .container .row .col-md-9 .badge i {
   }
 }
 
+.dates .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.dates h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 3rem;
+}
+.dates .table-responsive {
+  overflow-x: auto;
+}
+.dates .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  color: #333;
+  border-collapse: collapse;
+}
+.dates .table th,
+.dates .table td {
+  padding: 1rem;
+  vertical-align: middle;
+  text-align: center;
+}
+.dates .table thead th {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+}
+.dates .table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.dates .table.table-bordered th,
+.dates .table.table-bordered td {
+  border: 1px solid #ddd;
+}
+.dates .text-center {
+  text-align: center;
+}
+.dates .mt-5 {
+  margin-top: 3rem;
+}
+
 /*# sourceMappingURL=style.css.map */
