@@ -465,18 +465,18 @@ img {
 }
 @media only screen and (max-width: 992px) {
   .pluss .card {
-    width: 30%;
+    width: 25%;
   }
 }
 @media only screen and (max-width: 768px) {
   .pluss .card {
-    width: 40%;
+    width: 35%;
   }
   .pluss .card p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .pluss .card span {
-    font-size: 8px;
+    font-size: 5px;
   }
 }
 
