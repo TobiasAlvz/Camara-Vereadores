@@ -680,4 +680,78 @@ section .container .row .col-md-9 .badge i {
   margin-top: 3rem;
 }
 
+.docs2 {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  text-align: center;
+}
+.docs2 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.docs2 .card-header {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.docs2 .card-header h2 {
+  margin: 0;
+}
+.docs2 .card-header button {
+  font-size: 24px;
+  color: #007bff;
+  border: none;
+  text-align: left;
+  width: 100%;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.docs2 .card-header button:hover {
+  background-color: #e6f7ff;
+}
+.docs2 .card-body {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+}
+.docs2 .card-body .list-group {
+  margin-bottom: 0;
+}
+.docs2 .card-body .list-group .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+}
+.docs2 .card-body .list-group .list-group-item .badge {
+  font-size: 14px;
+  background-color: #007bff;
+}
+.docs2 .card-body .list-group .list-group-item button {
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.docs2 .card-body .list-group .list-group-item button:hover {
+  background-color: #0062cc;
+}
+.docs2 .card-body .list-group .list-group-item ul {
+  display: none;
+}
+@media (min-width: 768px) {
+  .docs2 .docs2 {
+    text-align: left;
+  }
+  .docs2 .docs2 .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
