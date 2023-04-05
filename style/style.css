@@ -681,69 +681,121 @@ section .container .row .col-md-9 .badge i {
 }
 
 #documentos {
-  background-color: #f7f7f7;
   padding: 50px 0;
 }
-#documentos h1 {
-  font-size: 36px;
+#documentos .container {
+  max-width: 1200px;
+}
+#documentos .container h1 {
+  font-size: 40px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
-#documentos .card-header {
-  background-color: #007bff;
+#documentos .container .card {
+  border-radius: 0;
   border: none;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-#documentos .card-header h2 {
+#documentos .container .card .card-header {
+  background-color: #ffffff;
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+#documentos .container .card .card-header h2 {
+  margin: 0;
+}
+#documentos .container .card .card-header button {
+  width: 100%;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  text-align: left;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.3s;
+}
+#documentos .container .card .card-header button:hover {
+  background-color: #e9ecef;
+}
+#documentos .container .card .card-header button:focus {
+  box-shadow: none;
+}
+#documentos .container .card .card-header button::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+  margin-top: -3px;
+  vertical-align: middle;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #333333;
+}
+#documentos .container .card .card-header.collapsed button::after {
+  border-top: 10px solid #333333;
+  border-bottom: none;
+  border-left: 10px solid transparent;
+}
+#documentos .container .card .card-body {
+  padding: 0;
+}
+#documentos .container .card .card-body .list-group-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 18px;
+  color: #333333;
+}
+#documentos .container .card .card-body .list-group-item:last-child {
+  border-bottom: none;
+}
+#documentos .container .card .card-body .list-group-item .badge {
+  text-align: center;
+  font-size: 14px;
+  background-color: #0264cf;
+}
+#documentos .container .card .card-body .list-group-item button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #0264cf;
+  border-radius: 15%;
+  border: none;
+  transition: background-color 0.3s;
+}
+#documentos .container .card .card-body .list-group-item button:hover {
+  font-weight: bold;
+}
+#documentos .container .card .card-body .list-group-item ul {
+  margin-top: 20px;
   margin-bottom: 0;
 }
-#documentos .card-header button {
-  color: #fff;
-  font-weight: bold;
+#documentos .container .card .card-body .list-group-item ul li {
+  font-size: 14px;
+  color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #e9ecef;
 }
-#documentos .card-header button:hover {
-  text-decoration: none;
+#documentos .container .card .card-body .list-group-item ul li:last-child {
+  border-bottom: none;
 }
-#documentos .card-body {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0;
-}
-#documentos .card-body .list-group-item {
-  border: none;
-}
-#documentos .card-body .list-group-item:nth-of-type(even) {
-  background-color: #f0f0f0;
-}
-#documentos .card-body .list-group-item .badge {
-  background-color: #007bff;
-  margin-right: 10px;
-  font-size: 16px;
-}
-#documentos .card-body .list-group-item button {
-  margin-top: -4px;
-}
-#documentos .card-body .list-group-item ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#documentos .card-body .list-group-item ul li {
-  padding: 5px 0;
-  margin-bottom: 5px;
-}
-#documentos .card-body .list-group-item ul li a {
-  color: #007bff;
-}
-#documentos .card-body .list-group-item ul li a:hover {
-  text-decoration: underline;
+#documentos .container .card .card-body .list-group-item ul li a {
+  color: #0264cf;
+  transition: color 0.3s;
 }
 @media (max-width: 767px) {
-  #documentos .card-header h2 {
-    font-size: 24px;
-  }
-  #documentos .badge {
-    font-size: 14px;
+  #documentos .container h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
