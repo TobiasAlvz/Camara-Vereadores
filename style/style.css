@@ -744,13 +744,25 @@ section .container .row .col-md-9 .badge i {
 .docs2 .card-body .list-group .list-group-item ul {
   display: none;
 }
-@media (min-width: 768px) {
-  .docs2 .docs2 {
+@media (min-width: 576px) {
+  .docs2 {
     text-align: left;
   }
-  .docs2 .docs2 .container {
-    max-width: 800px;
+}
+@media (min-width: 768px) {
+  .docs2 .container {
+    max-width: 720px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .docs2 .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .docs2 .container {
+    max-width: 1140px;
   }
 }
 
