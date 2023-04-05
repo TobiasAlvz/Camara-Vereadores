@@ -680,89 +680,70 @@ section .container .row .col-md-9 .badge i {
   margin-top: 3rem;
 }
 
-.docs2 {
-  background-color: #f2f2f2;
+#documentos {
+  background-color: #f7f7f7;
   padding: 50px 0;
-  text-align: center;
 }
-.docs2 h1 {
+#documentos h1 {
   font-size: 36px;
-  margin-bottom: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
-.docs2 .card-header {
-  background-color: #fff;
+#documentos .card-header {
+  background-color: #007bff;
   border: none;
-  padding: 0;
-  margin-bottom: 10px;
 }
-.docs2 .card-header h2 {
-  margin: 0;
-}
-.docs2 .card-header button {
-  font-size: 24px;
-  color: #007bff;
-  border: none;
-  text-align: left;
-  width: 100%;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-.docs2 .card-header button:hover {
-  background-color: #e6f7ff;
-}
-.docs2 .card-body {
-  background-color: #fff;
-  border: none;
-  padding: 0;
-}
-.docs2 .card-body .list-group {
+#documentos .card-header h2 {
   margin-bottom: 0;
 }
-.docs2 .card-body .list-group .list-group-item {
+#documentos .card-header button {
+  color: #fff;
+  font-weight: bold;
+}
+#documentos .card-header button:hover {
+  text-decoration: none;
+}
+#documentos .card-body {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+#documentos .card-body .list-group-item {
   border: none;
-  font-size: 18px;
 }
-.docs2 .card-body .list-group .list-group-item .badge {
-  font-size: 14px;
+#documentos .card-body .list-group-item:nth-of-type(even) {
+  background-color: #f0f0f0;
+}
+#documentos .card-body .list-group-item .badge {
   background-color: #007bff;
+  margin-right: 10px;
+  font-size: 16px;
 }
-.docs2 .card-body .list-group .list-group-item button {
-  font-size: 18px;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
+#documentos .card-body .list-group-item button {
+  margin-top: -4px;
 }
-.docs2 .card-body .list-group .list-group-item button:hover {
-  background-color: #0062cc;
+#documentos .card-body .list-group-item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.docs2 .card-body .list-group .list-group-item ul {
-  display: none;
+#documentos .card-body .list-group-item ul li {
+  padding: 5px 0;
+  margin-bottom: 5px;
 }
-@media (min-width: 576px) {
-  .docs2 {
-    text-align: left;
+#documentos .card-body .list-group-item ul li a {
+  color: #007bff;
+}
+#documentos .card-body .list-group-item ul li a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  #documentos .card-header h2 {
+    font-size: 24px;
   }
-}
-@media (min-width: 768px) {
-  .docs2 .container {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 992px) {
-  .docs2 .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .docs2 .container {
-    max-width: 1140px;
+  #documentos .badge {
+    font-size: 14px;
   }
 }
 
