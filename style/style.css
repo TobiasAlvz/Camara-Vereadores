@@ -792,10 +792,48 @@ section .container .row .col-md-9 .badge i {
   color: #0264cf;
   transition: color 0.3s;
 }
+
+@media (max-width: 991px) {
+  .container .card .card-header h2 {
+    font-size: 24px;
+  }
+  .container .card .card-header button {
+    font-size: 20px;
+  }
+}
 @media (max-width: 767px) {
-  #documentos .container h1 {
+  .container {
+    padding: 30px 0;
+  }
+  .container h1 {
     font-size: 28px;
     margin-bottom: 30px;
+  }
+  .container .card .card-header button {
+    font-size: 18px;
+  }
+  .container .card .card-header button::after {
+    margin-top: -5px;
+  }
+  .container .card .card-body .list-group-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+  .container .card .card-body .list-group-item .badge {
+    margin-top: 10px;
+  }
+  .container .card .card-body .list-group-item button {
+    margin-top: 10px;
+  }
+  .container .card .card-body .list-group-item ul {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .container .card .card-header button {
+    padding: 10px;
+    font-size: 16;
   }
 }
 
