@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-    />
+      />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../style/style.css" />
     <title>Consulta</title>
@@ -23,366 +23,377 @@
           height="16"
           fill="currentColor"
           class="bi bi-clock"
-          viewBox="0 0 16 16"
-        >
+          viewBox="0 0 16 16">
           <path
-            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-          />
-          <path
-            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-          />
-        </svg>
-        <span id="today"></span>
-      </div>
-      <div></div>
-    </section>
-
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div
-          class="container d-flex justify-content-around align-content-around"
-        >
-          <a href="../index.html"
-            ><img src="../img/logo-full-removebg-preview.png" alt="" srcset=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav d-flex mb- mb-lg-0">
-              <li class="nav-item mb-0">
-                <a
-                  id="nav-link"
-                  class="nav-link active pb-0"
-                  active
-                  pb-0
-                  aria-current="page"
-                  href="#inicio"
-                  >Início</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  id="nav-link"
-                  class="nav-link active pb-0 dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >A Câmara</a
-                >
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      target="_blank"
-                      href="https://camaratavares.pb.gov.br/images/arquivos/documentos/1646763475.pdf"
-                      >Regimento Interno</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="vereadores.html"
-                      >Vereadores</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  id="nav-link"
-                  class="nav-link active pb-0 dropdown-toggle"
-                  href="consulta.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  data-toggle="dropdown"
-                  >Consulta</a
-                >
-                <ul
-                  class="dropdown-menu hover"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="consulta.html"
-                      >Agenda da Câmara</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#exVereadores"
-                      >Atas das Sessões</a
-                    >
-                  </li>
-
-                  <li>
-                    <a
-                      target="_blank"
-                      class="dropdown-item"
-                      href="https://camaratavares.pb.gov.br/images/arquivos/documentos/1650913986.pdf"
-                      >PCA - Prestação de Contas Anuais</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      target="_blank"
-                      href="../img/lei de acesso a informacao.pdf"
-                      >Lei de Acesso a Informação</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      target="_blank"
-                      class="dropdown-item"
-                      href="https://camaratavares.easyweb.net.br/images/arquivos/documentos/1646763167.pdf"
-                      >Lei Orgânica</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#vereadores"
-                      >Leis Municipais</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#vereadores"
-                      >Licitações e Contratos</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#vereadores">Projetos</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#vereadores"
-                      >Requerimentos</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#vereadores">SIC</a>
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      target="_blank"
-                      href="https://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/"
-                      >Transparência Fiscal</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  id="nav-link"
-                  class="nav-link active pb-0 dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  data-toggle="dropdown"
-                >
-                  Informativos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#diarioOficial"
-                      >Diário Oficial</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#eventos">Eventos</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#noticias">Notícias</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#ouvidoria">Ouvidoria</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#perguntasFrequentes"
-                      >Perguntas Frequentes</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  id="nav-link"
-                  class="nav-link active me-3 pb-0"
-                  href="#faleConosco"
-                  >Fale Conosco</a
-                >
-              </li>
-            </ul>
+            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0
+            .496-.868L8 8.71V3.5z"
+            />
+            <path
+              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1
+              14 0z"
+              />
+            </svg>
+            <span id="today"></span>
           </div>
+          <div></div>
+        </section>
 
-          <div class="climate">
-            <span id="climate"></span>
-          </div>
-        </div>
-      </nav>
-    </header>
+        <header class="sticky-top">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div
+              class="container d-flex justify-content-around
+              align-content-around">
+              <a href="../index.html"><img
+                  src="../img/logo-full-removebg-preview.png" alt="" srcset=""
+                  /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex mb- mb-lg-0">
+                  <li class="nav-item mb-0">
+                    <a
+                      id="nav-link"
+                      class="nav-link active pb-0"
+                      active
+                      pb-0
+                      aria-current="page"
+                      href="#inicio">Início</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      id="nav-link"
+                      class="nav-link active pb-0 dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false">A Câmara</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          target="_blank"
+                          href="https://camaratavares.pb.gov.br/images/arquivos/documentos/1646763475.pdf">Regimento
+                          Interno</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="vereadores.html">Vereadores</a>
+                      </li>
+                    </ul>
+                  </li>
 
+                  <li class="nav-item dropdown">
+                    <a
+                      id="nav-link"
+                      class="nav-link active pb-0 dropdown-toggle"
+                      href="consulta.html"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-toggle="dropdown">Consulta</a>
+                    <ul
+                      class="dropdown-menu hover"
+                      aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="consulta.html">Agenda da
+                          Câmara</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#exVereadores">Atas das
+                          Sessões</a>
+                      </li>
 
-    <section class="dates">
-      <div class="container">
-        <h1 class="text-center">Agenda da Câmara</h1>
-        <table class="table table-striped table-bordered mt-5">
-          <thead>
-            <tr>
-              <th>Mês</th>
-              <th>Datas</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>JULHO</td>
-              <td>24</td>
-            </tr>
-            <tr>
-              <td>AGOSTO</td>
-              <td>07 e 21</td>
-            </tr>
-            <tr>
-              <td>SETEMBRO</td>
-              <td>18 e 25</td>
-            </tr>
-            <tr>
-              <td>OUTUBRO</td>
-              <td>09 e 23</td>
-            </tr>
-            <tr>
-              <td>NOVEMBRO</td>
-              <td>06 e 20</td>
-            </tr>
-            <tr>
-              <td>DEZEMBRO</td>
-              <td>04 e 18</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="text-center mt-5">
-          As sessões são realizadas a cada 15 dias, sempre aos sábados, às
-          16h00, com duração de duas horas, podendo se prolongar, a critério da
-          Presidência, na hipótese de discussão e deliberação acerca de matéria
-          de relevante interesse para a comunidade.
-        </p>
-      </div>
-    </section>
+                      <li>
+                        <a
+                          target="_blank"
+                          class="dropdown-item"
+                          href="https://camaratavares.pb.gov.br/images/arquivos/documentos/1650913986.pdf">PCA
+                          - Prestação de Contas Anuais</a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          target="_blank"
+                          href="../img/lei de acesso a informacao.pdf">Lei de
+                          Acesso a Informação</a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          class="dropdown-item"
+                          href="https://camaratavares.easyweb.net.br/images/arquivos/documentos/1646763167.pdf">Lei
+                          Orgânica</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#vereadores">Leis
+                          Municipais</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#vereadores">Licitações e
+                          Contratos</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#vereadores">Projetos</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#vereadores">Requerimentos</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#vereadores">SIC</a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          target="_blank"
+                          href="https://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/">Transparência
+                          Fiscal</a>
+                      </li>
+                    </ul>
+                  </li>
 
-    <section class="docs">
-      <div class="container mt-5">
-        <h1>Lista de Arquivos</h1>
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  2022
-                </button>
-              </h2>
+                  <li class="nav-item dropdown">
+                    <a
+                      id="nav-link"
+                      class="nav-link active pb-0 dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-toggle="dropdown">
+                      Informativos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#diarioOficial">Diário
+                          Oficial</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#eventos">Eventos</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#noticias">Notícias</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#ouvidoria">Ouvidoria</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#perguntasFrequentes">Perguntas
+                          Frequentes</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="nav-link"
+                      class="nav-link active me-3 pb-0"
+                      href="#faleConosco">Fale Conosco</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="climate">
+                <span id="climate"></span>
+              </div>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    Atas das Sessões
-                    <span class="badge badge-pill badge-secondary">19 Arquivos</span>
-                    <button type="button" class="btn btn-primary float-right" data-toggle="modal"
-                      data-target="#addFileModal">Adicionar</button>
-                    <ul class="list-group mt-2" id="atas-sessoes-files">
-                    </ul>
-                  </li>
-                  <li class="list-group-item">
-                    Portarias e Atos
-                    <span class="badge badge-pill badge-secondary">19 Arquivos</span>
-                    <button type="button" class="btn btn-primary float-right" data-toggle="modal"
-                      data-target="#addFileModal">Adicionar</button>
-                    <ul class="list-group mt-2" id="portarias-atos-files">
-                    </ul>
-                  </li>
-                  <li class="list-group-item">
-                    PPA
-                    <span class="badge badge-pill badge-secondary">1 Arquivos</span>
-                    <button type="button" class="btn btn-primary float-right" data-toggle="modal"
-                      data-target="#addFileModal">Adicionar</button>
-                    <ul class="list-group mt-2" id="ppa-files">
-                    </ul>
-                  </li>
-                  <li class="list-group-item">
-                    Projetos de Lei
-                    <span class="badge badge-pill badge-secondary">62 Arquivos</span>
-                    <button type="button" class="btn btn-primary float-right" data-toggle="modal"
-                      data-target="#addFileModal">Adicionar</button>
-                    <ul class="list-group mt-2" id="projetos-lei-files">
-                    </ul>
-                  </li>
-                  <li class="list-group-item">
-                    Projetos de Lei
-                    <span class="badge badge-pill badge-secondary">62 Arquivos</span>
-                    <button type="button" class="btn btn-primary float-right" data-toggle="modal"
-                      data-target="#addFileModal">Adicionar</button>
-                    <ul class="list-group mt-2" id="projetos-lei-files">
-                    </ul>
-                  </li>
-    </section>
+          </nav>
+        </header>
 
 
-    <footer class="bg-dark text-light py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-md-0 text-center">
-            <h4>CNPJ.: 08.560.799/0001-82</h4>
-            <p class="mb-0">Horário de Atendimento</p>
-            <p>Segunda à Sexta: De 07:00 às 13:00</p>
-          </div>
-          <div class="col-md-4 mb-5 mb-md-0 text-center">
-            <h4>Endereço Físico</h4>
-            <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
-            <p>Tavares / PB - CEP: 58753-000</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <h4>Telefones Úteis</h4>
-            <a href="tel: (83) 3450-1023">
-              <p>(83) 3450-1023</p>
-            </a>
-            <a href="tel:(83) 99929-4045">
-              <p>(83) 99929-4045</p>
-            </a>
-          </div>
-        </div>
-        <hr class="my-5" />
-        <p class="mt-5 text-center">
-          © 2023 Câmara Municipal de Tavares. Todos os direitos reservados.
-        </p>
-      </div>
-    </footer>
 
-    <!-- Script animation -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+        <section class="dates">
+          <div class="container">
+            <h1 class="text-center">Agenda da Câmara</h1>
+            <table class="table table-striped table-bordered mt-5">
+              <thead>
+                <tr>
+                  <th>Mês</th>
+                  <th>Datas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>JULHO</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>AGOSTO</td>
+                  <td>07 e 21</td>
+                </tr>
+                <tr>
+                  <td>SETEMBRO</td>
+                  <td>18 e 25</td>
+                </tr>
+                <tr>
+                  <td>OUTUBRO</td>
+                  <td>09 e 23</td>
+                </tr>
+                <tr>
+                  <td>NOVEMBRO</td>
+                  <td>06 e 20</td>
+                </tr>
+                <tr>
+                  <td>DEZEMBRO</td>
+                  <td>04 e 18</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="text-center mt-5">
+              As sessões são realizadas a cada 15 dias, sempre aos sábados, às
+              16h00, com duração de duas horas, podendo se prolongar, a critério
+              da
+              Presidência, na hipótese de discussão e deliberação acerca de
+              matéria
+              de relevante interesse para a comunidade.
+            </p>
+          </div>
+        </section>
+
+
+        <section class="docs2">
+          <div class="container mt-5">
+            <h1>Lista de Arquivos</h1>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button"
+                      data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      2023
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse show"
+                  aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        Atas das Sessões
+                        <span class="badge badge-pill badge-secondary">19
+                          Arquivos</span>
+                        <button type="button" class="btn btn-primary
+                          float-right" data-toggle="modal"
+                          data-target="#addFileModal">Acessar</button>
+                        <ul class="list-group mt-2" id="atas-sessoes-files">
+                        </ul>
+                      </li>
+                      <li class="list-group-item">
+                        Portarias e Atos
+                        <span class="badge badge-pill badge-secondary">19
+                          Arquivos</span>
+                        <button type="button" class="btn btn-primary
+                          float-right" data-toggle="modal"
+                          data-target="#addFileModal">Acessar</button>
+                        <ul class="list-group mt-2" id="portarias-atos-files">
+                        </ul>
+                      </li>
+                      <li class="list-group-item">
+                        PPA
+                        <span class="badge badge-pill badge-secondary">1
+                          Arquivos</span>
+                        <button type="button" class="btn btn-primary
+                          float-right" data-toggle="modal"
+                          data-target="#addFileModal">Acessar</button>
+                        <ul class="list-group mt-2" id="ppa-files">
+                        </ul>
+                      </li>
+                      <li class="list-group-item">
+                        Projetos de Lei
+                        <span class="badge badge-pill badge-secondary">62
+                          Arquivos</span>
+                        <button type="button" class="btn btn-primary
+                          float-right" data-toggle="modal"
+                          data-target="#addFileModal">Acessar</button>
+                        <ul class="list-group mt-2" id="projetos-lei-files">
+                        </ul>
+                      </li>
+                      <li class="list-group-item">
+                        Requerimentos
+                        <span class="badge badge-pill badge-secondary">39
+                          Arquivos</span>
+                        <button type="button" class="btn btn-primary
+                          float-right" data-toggle="modal"
+                          data-target="#addFileModal">Acessar</button>
+                        <ul class="list-group mt-2" id="requerimentos-files">
+                        </ul>
+                      </li>
+                      <li class="list-group-item">
+                        Responsabilidade Fiscal
+
+                        <span class="badge badge-pill badge-secondary">39
+                          Arquivos</span>
+                        <button type="button" class="btn btn-primary
+                          float-right" data-toggle="modal"
+                          data-target="#addFileModal">Acessar</button>
+                        <ul class="list-group mt-2"
+                          id="responsabilidade-fiscal-files">
+                        </ul>
+                      </li>
+
+
+
+                    </div>
+                  </div>
+                </section>
+
+
+
+
+
+
+
+                <footer class="bg-dark text-light py-5">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4 mb-5 mb-md-0 text-center">
+                        <h4>CNPJ.: 08.560.799/0001-82</h4>
+                        <p class="mb-0">Horário de Atendimento</p>
+                        <p>Segunda à Sexta: De 07:00 às 13:00</p>
+                      </div>
+                      <div class="col-md-4 mb-5 mb-md-0 text-center">
+                        <h4>Endereço Físico</h4>
+                        <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
+                        <p>Tavares / PB - CEP: 58753-000</p>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <h4>Telefones Úteis</h4>
+                        <a href="tel: (83) 3450-1023">
+                          <p>(83) 3450-1023</p>
+                        </a>
+                        <a href="tel:(83) 99929-4045">
+                          <p>(83) 99929-4045</p>
+                        </a>
+                      </div>
+                    </div>
+                    <hr class="my-5" />
+                    <p class="mt-5 text-center">
+                      © 2023 Câmara Municipal de Tavares. Todos os direitos
+                      reservados.
+                    </p>
+                  </div>
+                </footer>
+
+                <!-- Script animation -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
       AOS.init();
     </script>
-    <!-- Bootstrap Js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
+                <!-- Bootstrap Js -->
+                <script
+                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                  crossorigin="anonymous"></script>
 
-    <script src="../script.js"></script>
-  </body>
-</html>
+                <script src="../script.js"></script>
+              </body>
+            </html>
