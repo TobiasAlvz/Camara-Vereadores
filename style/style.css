@@ -888,4 +888,55 @@ section .container .row .col-md-9 .badge i {
   }
 }
 
+.FAQ {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.FAQ .accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.FAQ .accordion-item {
+  border: none;
+}
+.FAQ .accordion-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.FAQ .accordion-item .accordion-header {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.FAQ .accordion-item .accordion-header:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+.FAQ .accordion-item .accordion-header button {
+  color: #333;
+  background-color: transparent;
+  border: none;
+}
+.FAQ .accordion-item .accordion-header button:focus {
+  outline: none;
+}
+.FAQ .accordion-item .accordion-collapse {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  color: #666;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.FAQ .accordion-item .accordion-button::after {
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
