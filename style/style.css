@@ -905,6 +905,7 @@ section .container .row .col-md-9 .badge i {
   margin-bottom: 10px;
 }
 .FAQ p {
+  text-align: justify;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
