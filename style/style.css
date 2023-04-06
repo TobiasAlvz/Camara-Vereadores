@@ -893,6 +893,21 @@ section .container .row .col-md-9 .badge i {
   background-color: #f7f7f7;
   text-align: center;
 }
+.FAQ ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.FAQ h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.FAQ p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
 .FAQ .accordion {
   max-width: 800px;
   margin: 0 auto;
