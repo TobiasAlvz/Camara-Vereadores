@@ -60,6 +60,7 @@
   padding: 60px 0;
   background-color: #f7f7f7;
   text-align: center;
+
   ul {
     list-style: none;
     margin: 0;
@@ -115,6 +116,7 @@
       }
 
       & .accordion-collapse {
+        text-align: justify;
         background-color: #fff;
         border-radius: 10px;
         padding: 15px;

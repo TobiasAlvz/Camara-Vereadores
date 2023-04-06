@@ -942,6 +942,7 @@ section .container .row .col-md-9 .badge i {
   outline: none;
 }
 .FAQ .accordion-item .accordion-collapse {
+  text-align: justify;
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
