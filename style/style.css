@@ -957,4 +957,73 @@ section .container .row .col-md-9 .badge i {
   margin-left: 5px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+.contact h2 {
+  margin-bottom: 20px;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 600px;
+}
+.contact form div {
+  display: flex;
+  flex-direction: column;
+}
+.contact form div label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact form div input,
+.contact form div textarea,
+.contact form div select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+.contact form div input:focus,
+.contact form div textarea:focus,
+.contact form div select:focus {
+  outline: none;
+  border-color: #06c;
+}
+.contact form div input:invalid,
+.contact form div textarea:invalid,
+.contact form div select:invalid {
+  border-color: #f00;
+}
+.contact form div textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.contact form div span {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.contact form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #06c;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact form button:hover {
+  background-color: #0493c3;
+}
+@media screen and (max-width: 600px) {
+  .contact form {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
