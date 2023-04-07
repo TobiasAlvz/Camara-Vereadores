@@ -998,7 +998,7 @@ section .container .row .col-md-9 .badge i {
 .contact form div input:invalid,
 .contact form div textarea:invalid,
 .contact form div select:invalid {
-  border-color: #f00;
+  border-color: #0264cf;
 }
 .contact form div textarea {
   resize: vertical;
