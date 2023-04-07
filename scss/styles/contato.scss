@@ -38,7 +38,7 @@
         }
 
         &:invalid {
-          border-color: #f00;
+          border-color: $primary-color;
         }
       }
 
