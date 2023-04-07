@@ -73,3 +73,10 @@ function validaTelefone(telefone) {
   const regex = /^\d+$/;
   return regex.test(telefone);
 }
+
+const input = document.getElementById("solicitacao");
+const charCount = document.getElementById("quantidade-caracteres");
+
+input.addEventListener("input", () => {
+  charCount.textContent = input.value.length;
+});

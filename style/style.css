@@ -215,7 +215,8 @@ img {
   color: gray;
   margin-bottom: 5px;
 }
-.news-container .card .card-button {
+.news-container .card a .card-button {
+  width: 100%;
   background-color: #0264cf;
   border: none;
   color: white;
@@ -224,7 +225,7 @@ img {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.news-container .card .card-button:hover {
+.news-container .card a .card-button:hover {
   background-color: #024c9c;
 }
 .news-container .news-item {
