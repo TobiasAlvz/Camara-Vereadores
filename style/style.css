@@ -972,7 +972,7 @@ section .container .row .col-md-9 .badge i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  max-width: 600px;
+  max-width: 900px;
 }
 .contact form div {
   display: flex;
