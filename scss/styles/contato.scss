@@ -29,12 +29,12 @@
       select {
         padding: 10px;
         border-radius: 5px;
-        border: 1px solid #ddd;
+        border: 1px solid black;
         font-size: 16px;
 
         &:focus {
           outline: none;
-          border-color: #06c;
+          border-color: rgb(4, 119, 235);
         }
 
         &:invalid {
