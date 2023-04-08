@@ -987,14 +987,14 @@ section .container .row .col-md-9 .badge i {
 .contact form div select {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   font-size: 16px;
 }
 .contact form div input:focus,
 .contact form div textarea:focus,
 .contact form div select:focus {
   outline: none;
-  border-color: #06c;
+  border-color: rgb(4, 119, 235);
 }
 .contact form div input:invalid,
 .contact form div textarea:invalid,
