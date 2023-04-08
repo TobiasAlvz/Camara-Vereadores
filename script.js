@@ -26,7 +26,7 @@ fetch(url)
     const temperaturaAtual = Math.round(data.main.temp);
 
     const climate = document.getElementById("climate");
-    climate.innerHTML = `Temperatura atual: ${temperaturaAtual}°C<br>
+    climate.innerHTML = `${temperaturaAtual}°C<br>
                           `;
   })
   .catch((error) => console.error(error));
