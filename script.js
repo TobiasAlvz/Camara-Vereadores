@@ -80,3 +80,21 @@ const charCount = document.getElementById("quantidade-caracteres");
 input.addEventListener("input", () => {
   charCount.textContent = input.value.length;
 });
+
+// Seleciona o elemento "nav" pelo ID
+var nav = document.getElementById("header");
+
+// Obtém a posição do elemento "nav" em relação ao topo da página
+var sticky = nav.offsetTop;
+
+// Adiciona um evento de rolagem à janela
+window.addEventListener("scroll", function () {
+  // Verifica se a posição atual da página é maior ou igual à posição do elemento "nav"
+  if (window.pageYOffset >= sticky) {
+    // Se for, adiciona a classe "fixed-top" ao elemento "nav"
+    nav.classList.add("fixed-top");
+  } else {
+    // Caso contrário, remove a classe "fixed-top" do elemento "nav"
+    nav.classList.remove("fixed-top");
+  }
+});
