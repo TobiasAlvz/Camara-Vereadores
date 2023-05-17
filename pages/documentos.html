@@ -1,648 +1,876 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-      />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="shortcut icon" href="../img/favicon.png" type="favicon" />
-    <title>Documentos</title>
-  </head>
-  <body>
-    <section id="top-head">
-      <div class="today">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-clock"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0
-            .496-.868L8 8.71V3.5z"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
             />
-            <path
-              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1
-              14 0z"
-              />
-            </svg>
-            <span id="today"></span>
-          </div>
-          <div></div>
-        </section>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <link rel="shortcut icon" href="../img/favicon.png" type="favicon" />
+        <title>Documentos</title>
+    </head>
+    <body>
+        <section id="top-head">
+            <div class="today">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5
+                        2a.5.5 0 0 0
+                        .496-.868L8 8.71V3.5z"
+                        />
+                        <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1
+                            1 8a7 7 0 0 1
+                            14 0z"
+                            />
+                        </svg>
+                        <span id="today"></span>
+                    </div>
+                    <div></div>
+                </section>
 
-        <header class="sticky-top">
-          <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-            <div
-              class="container d-flex justify-content-around
-              align-content-around">
-              <a href="../index.html"><img
-                  src="../img/logo-full-removebg-preview.png" alt="" srcset=""
-                  /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <header class="sticky-top">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white
+                        sticky-top">
+                        <div
+                            class="container d-flex justify-content-around
+                            align-content-around">
+                            <a href="../index.html"><img
+                                    src="../img/logo-full-removebg-preview.png"
+                                    alt="" srcset=""
+                                    /></a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 
-              <div
-                class="collapse navbar-collapse justify-content-center"
-                id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex mb- mb-lg-0">
-                  <li class="nav-item mb-0">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0"
-                      active
-                      pb-0
-                      aria-current="page"
-                      href="../index.html">Início</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false">A Câmara</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="../docs/regimentoInterno.pdf">Regimento
-                          Interno</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="vereadores.html">Vereadores</a>
-                      </li>
-                    </ul>
-                  </li>
+                            <div
+                                class="collapse navbar-collapse
+                                justify-content-center"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav d-flex mb- mb-lg-0">
+                                    <li class="nav-item mb-0">
+                                        <a
+                                            id="nav-link"
+                                            class="nav-link active pb-0"
+                                            active
+                                            pb-0
+                                            aria-current="page"
+                                            href="../index.html">Início</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a
+                                            id="nav-link"
+                                            class="nav-link active pb-0
+                                            dropdown-toggle"
+                                            href="#"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">A Câmara</a>
+                                        <ul class="dropdown-menu"
+                                            aria-labelledby="navbarDropdown">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    target="_blank"
+                                                    href="../docs/regimentoInterno.pdf">Regimento
+                                                    Interno</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item"
+                                                    href="vereadores.html">Vereadores</a>
+                                            </li>
+                                        </ul>
+                                    </li>
 
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="consulta.html"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-toggle="dropdown">Consulta</a>
-                    <ul
-                      class="dropdown-menu hover"
-                      aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="consulta.html">Agenda da
-                          Câmara</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item"
-                          href="../pages/consulta.html#documentos">Documentos</a>
-                      </li>
+                                    <li class="nav-item dropdown">
+                                        <a
+                                            id="nav-link"
+                                            class="nav-link active pb-0
+                                            dropdown-toggle"
+                                            href="consulta.html"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            data-toggle="dropdown">Consulta</a>
+                                        <ul
+                                            class="dropdown-menu hover"
+                                            aria-labelledby="navbarDropdown">
+                                            <li>
+                                                <a class="dropdown-item"
+                                                    href="consulta.html">Agenda
+                                                    da
+                                                    Câmara</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item"
+                                                    href="../pages/consulta.html#documentos">Documentos</a>
+                                            </li>
 
-                      <li>
-                        <a
-                          target="_blank"
-                          class="dropdown-item"
-                          href="../docs/PCA.pdf">PCA
-                          - Prestação de Contas Anuais</a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="../img/lei de acesso a informacao.pdf">Lei de
-                          Acesso a Informação</a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          class="dropdown-item"
-                          href="../docs/lei-organica.pdf">Lei
-                          Orgânica</a>
-                      </li>
+                                            <li>
+                                                <a
+                                                    target="_blank"
+                                                    class="dropdown-item"
+                                                    href="../docs/PCA.pdf">PCA
+                                                    - Prestação de Contas Anuais</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    target="_blank"
+                                                    href="../img/lei de acesso a
+                                                    informacao.pdf">Lei de
+                                                    Acesso a Informação</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    target="_blank"
+                                                    class="dropdown-item"
+                                                    href="../docs/lei-organica.pdf">Lei
+                                                    Orgânica</a>
+                                            </li>
 
 
 
 
-                      <li>
-                        <a class="dropdown-item" href="#vereadores">SIC</a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="https://tavares.pb.gov.br/assuntos/portal-da-transparencia">Transparência
-                          Fiscal</a>
-                      </li>
-                    </ul>
-                  </li>
+                                            <li>
+                                                <a class="dropdown-item"
+                                                    href="#vereadores">SIC</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="https://tavares.pb.gov.br/assuntos/portal-da-transparencia">Transparência
+                                                    Fiscal</a>
+                                            </li>
+                                        </ul>
+                                    </li>
 
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-toggle="dropdown">
-                      Informativos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="diario.html">Diário
-                          Oficial</a>
-                      </li>
+                                    <li class="nav-item dropdown">
+                                        <a
+                                            id="nav-link"
+                                            class="nav-link active pb-0
+                                            dropdown-toggle"
+                                            href="#"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            data-toggle="dropdown">
+                                            Informativos
+                                        </a>
+                                        <ul class="dropdown-menu"
+                                            aria-labelledby="navbarDropdown">
+                                            <li>
+                                                <a class="dropdown-item"
+                                                    href="diario.html">Diário
+                                                    Oficial</a>
+                                            </li>
 
-                      <li>
-                        <a class="dropdown-item" href="informativos.html#news">Notícias</a>
-                      </li>
+                                            <li>
+                                                <a class="dropdown-item"
+                                                    href="informativos.html#news">Notícias</a>
+                                            </li>
 
-                      <li>
-                        <a class="dropdown-item" href="#faq">Perguntas
-                          Frequentes</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      id="nav-link"
-                      class="nav-link active me-3 pb-0"
-                      href="consulta.html">Fale Conosco</a>
-                  </li>
-                </ul>
-              </div>
+                                            <li>
+                                                <a class="dropdown-item"
+                                                    href="#faq">Perguntas
+                                                    Frequentes</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            id="nav-link"
+                                            class="nav-link active me-3 pb-0"
+                                            href="consulta.html">Fale Conosco</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-              <div class="climate">
-                <span id="climate"></span>
-              </div>
+                            <div class="climate">
+                                <span id="climate"></span>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+
+
+
+
             </div>
-          </nav>
-        </header>
-
-
-
-
-      </div>
 
 
 
 
 
-      <div class="container documents">
-        <div class="row justify-content-center docc">
-          <div class="col-md-3 my-3">
-            <div class="card-doc text-center">
-              <div class="card-body">
-                <h3 class="card-title-doc">Atas das Sessões</h3>
-                <ol>
-                  <li><a target="_blank" href="../docs/Atas/001.pdf">Arquivo 1</a></li>
-                  <li><a target="_blank" href="../docs/Atas/002.pdf">Arquivo 2</a></li>
-                  <li><a target="_blank" href="../docs/Atas/003.pdf">Arquivo 3</a></li>
-                  <li><a target="_blank" href="../docs/Atas/004.pdf">Arquivo 4</a></li>
-                  <li><a target="_blank" href="../docs/Atas/005.pdf">Arquivo 5</a></li>
-                  <li><a target="_blank" href="../docs/Atas/006.pdf">Arquivo 6</a></li>
-                  <li><a target="_blank" href="../docs/Atas/007.pdf">Arquivo 7</a></li>
-                  <li><a target="_blank" href="../docs/Atas/008.pdf">Arquivo 8</a></li>
-                  <li><a target="_blank" href="../docs/Atas/009.pdf">Arquivo 9</a></li>
-                  <li><a target="_blank" href="../docs/Atas/010.pdf">Arquivo 10</a></li>
-                  <li><a target="_blank" href="../docs/Atas/011.pdf">Arquivo 11</a></li>
-                  <li><a target="_blank" href="../docs/Atas/012.pdf">Arquivo 12</a></li>
-                  <li><a target="_blank" href="../docs/Atas/013.pdf">Arquivo 13</a></li>
-                  <li><a target="_blank" href="../docs/Atas/014.pdf">Arquivo 14</a></li>
-                  <li><a target="_blank" href="../docs/Atas/015.pdf">Arquivo 15</a></li>
-                  <li><a target="_blank" href="../docs/Atas/016.pdf">Arquivo 16</a></li>
-                  <li><a target="_blank" href="../docs/Atas/017.pdf">Arquivo 17</a></li>
-                  <li><a target="_blank" href="../docs/Atas/018.pdf">Arquivo 18</a></li>
-                  <li><a target="_blank" href="../docs/Atas/019.pdf">Arquivo 19</a></li>
-                  <h3 class="text-center">2023</h3>
-                  <li><a target="_blank" href="../docs/Atas/2023/Ata da sessão
-                      Solene de Posse da mesa diretora 22.02.23.pdf">Arquivo 20</a></li>
-                  <li><a target="_blank" href="../docs/Atas/2023/Ata da sessão
-                      Solene de reabertura dos trabalhos 22.02.pdf">Arquivo 21</a></li>
-                  <li><a target="_blank" href="../docs/Atas/2023/Ata de sessão
-                      Extraordinária 24.02.pdf">Arquivo 22</a></li>
-                  <li><a target="_blank" href="../docs/Atas/2023/Ata de sessão
-                      Ordinária 05.04.pdf">Arquivo 23</a></li>
-                  <li><a target="_blank" href="../docs/Atas/2023/Ata de sessão
-                      Ordinária 19.04.pdf">Arquivo 24</a></li>
-                  <li><a target="_blank" href="../docs/Atas/2023/Ata de sessão
-                      Ordinária 22.03.pdf">Arquivo 25</a></li>
-                  <li><a target="_blank" href="../docs/Atas/2023/Ata de sessão
-                      Ordinária 29.03.pdf">Arquivo 26</a></li>
-                  <li><a target="_blank" href="../docs/Atas/2023/Ata de sessão
-                      Ordinária 26.04.pdf">Arquivo 26</a></li>
+            <div class="container documents">
+                <div class="row justify-content-center docc">
+                    <div class="col-md-3 my-3">
+                        <div class="card-doc text-center">
+                            <div class="card-body">
+                                <h3 class="card-title-doc">Atas das Sessões</h3>
+                                <ol>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/001.pdf">Arquivo
+                                            1</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/002.pdf">Arquivo
+                                            2</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/003.pdf">Arquivo
+                                            3</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/004.pdf">Arquivo
+                                            4</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/005.pdf">Arquivo
+                                            5</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/006.pdf">Arquivo
+                                            6</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/007.pdf">Arquivo
+                                            7</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/008.pdf">Arquivo
+                                            8</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/009.pdf">Arquivo
+                                            9</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/010.pdf">Arquivo
+                                            10</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/011.pdf">Arquivo
+                                            11</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/012.pdf">Arquivo
+                                            12</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/013.pdf">Arquivo
+                                            13</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/014.pdf">Arquivo
+                                            14</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/015.pdf">Arquivo
+                                            15</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/016.pdf">Arquivo
+                                            16</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/017.pdf">Arquivo
+                                            17</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/018.pdf">Arquivo
+                                            18</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/019.pdf">Arquivo
+                                            19</a></li>
+                                    <h3 class="text-center">2023</h3>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata da
+                                            sessão
+                                            Solene de Posse da mesa diretora
+                                            22.02.23.pdf">Arquivo 20</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata da
+                                            sessão
+                                            Solene de reabertura dos trabalhos
+                                            22.02.pdf">Arquivo 21</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata de
+                                            sessão
+                                            Extraordinária 24.02.pdf">Arquivo 22</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata de
+                                            sessão
+                                            Ordinária 05.04.pdf">Arquivo 23</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata de
+                                            sessão
+                                            Ordinária 19.04.pdf">Arquivo 24</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata de
+                                            sessão
+                                            Ordinária 22.03.pdf">Arquivo 25</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata de
+                                            sessão
+                                            Ordinária 29.03.pdf">Arquivo 26</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata de
+                                            sessão
+                                            Ordinária 26.04.pdf">Arquivo 26</a></li>
+                                    <li><a target="_blank"
+                                            href="../docs/Atas/2023/Ata de
+                                            sessão
+                                            Ordinária 10.05.pdf">Arquivo 27</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="card-doc text-center">
+                            <div class="card-body">
+                                <h3 class="card-title-doc">Portarias</h3>
+                                <ol>
+                                    <h3 class="text-center">2021</h3>
+                                </a><li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/001.pdf">Arquivo
+                                        1</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/002.pdf">Arquivo
+                                        2</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/003.pdf">Arquivo
+                                        3</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/004.pdf">Arquivo
+                                        4</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/005.pdf">Arquivo
+                                        5</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/006.pdf">Arquivo
+                                        6</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/007.pdf">Arquivo
+                                        7</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/008.pdf">Arquivo
+                                        8</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/009.pdf">Arquivo
+                                        9</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/010.pdf">Arquivo
+                                        10</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/011.pdf">Arquivo
+                                        11</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/012.pdf">Arquivo
+                                        12</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/013.pdf">Arquivo
+                                        13</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2021/portarias/014.pdf">Arquivo
+                                        14</a></li>
+                                <h3 class="text-center">2022</h3>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2022/portarias/001.pdf">Arquivo
+                                        15</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2022/portarias/002.pdf">Arquivo
+                                        16</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2022/portarias/003.pdf">Arquivo
+                                        17</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2022/portarias/004.pdf">Arquivo
+                                        18</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2022/portarias/005.pdf">Arquivo
+                                        19</a></li>
+                                <h3 class="text-center">2023</h3>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/001.pdf">Arquivo
+                                        20</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/002.pdf">Arquivo
+                                        21</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/003.pdf">Arquivo
+                                        22</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/009.pdf">Arquivo
+                                        23</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/010.pdf">Arquivo
+                                        24</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/011.pdf">Arquivo
+                                        25</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/012.pdf">Arquivo
+                                        26</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/013.pdf">Arquivo
+                                        27</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/014.pdf">Arquivo
+                                        28</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/015.pdf">Arquivo
+                                        29</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/016.pdf">Arquivo
+                                        28</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/portaria/2023/017.pdf">Arquivo
+                                        29</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 my-3">
+                    <div class="card-doc text-center">
+                        <div class="card-body">
+                            <h3 class="card-title-doc">Projetos de Lei</h3>
+                            <ol>
+                                <h3 class="text-center">2021</h3>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/01.pdf">Arquivo
+                                        1</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/001.pdf">Arquivo
+                                        2</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/0001.pdf">Arquivo
+                                        3</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/002.pdf">Arquivo
+                                        4</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/003.pdf">Arquivo
+                                        5</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/004.pdf">Arquivo
+                                        6</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/005.pdf">Arquivo
+                                        7</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/006.pdf">Arquivo
+                                        8</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/007.pdf">Arquivo
+                                        9</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/008.pdf">Arquivo
+                                        10</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/009.pdf">Arquivo
+                                        11</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/010.pdf">Arquivo
+                                        12</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/011.pdf">Arquivo
+                                        13</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/013.pdf">Arquivo
+                                        14</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/014.pdf">Arquivo
+                                        15</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/020.pdf">Arquivo
+                                        16</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/021.pdf">Arquivo
+                                        17</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/022.pdf">Arquivo
+                                        18</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/023.pdf">Arquivo
+                                        19</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/024.pdf">Arquivo
+                                        20</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/025.pdf">Arquivo
+                                        21</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/026.pdf">Arquivo
+                                        22</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/1646916320.pdf">Arquivo
+                                        23</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2021/PPA.pdf">Arquivo
+                                        24</a></li>
+                                <h3 class="text-center">2022</h3>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/001.pdf">Arquivo
+                                        25</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/002.pdf">Arquivo
+                                        26</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/003.pdf">Arquivo
+                                        27</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/004.pdf">Arquivo
+                                        28</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/005.pdf">Arquivo
+                                        29</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/006.pdf">Arquivo
+                                        30</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/008.pdf">Arquivo
+                                        31</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/009.pdf">Arquivo
+                                        32</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/010.pdf">Arquivo
+                                        33</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/011.pdf">Arquivo
+                                        34</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/012.pdf">Arquivo
+                                        35</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/013.pdf">Arquivo
+                                        36</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/014.pdf">Arquivo
+                                        37</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/015.pdf">Arquivo
+                                        38</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/016.pdf">Arquivo
+                                        39</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/017.pdf">Arquivo
+                                        40</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/019.pdf">Arquivo
+                                        41</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/020.pdf">Arquivo
+                                        42</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/021.pdf">Arquivo
+                                        43</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/022.pdf">Arquivo
+                                        44</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/024.pdf">Arquivo
+                                        45</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/025.pdf">Arquivo
+                                        46</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/026.pdf">Arquivo
+                                        47</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/027.pdf">Arquivo
+                                        48</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/030.pdf">Arquivo
+                                        49</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/031.pdf">Arquivo
+                                        50</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/032.pdf">Arquivo
+                                        51</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/033.pdf">Arquivo
+                                        52</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/034.pdf">Arquivo
+                                        53</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/L001.pdf">Arquivo
+                                        54</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/LOA.pdf">Arquivo
+                                        55</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/projetosDeLeis/2022/Resolução001.pdf">Arquivo
+                                        56</a></li>
+                                <h3 class="text-center">2023</h3>
+                                <li><a target= '_blank'
+                                        href="../docs/projetosDeLeis/2023/001.pdf">Arquivo
+                                        57</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/projetosDeLeis/2023/001-2.pdf">Arquivo
+                                        58</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/projetosDeLeis/2023/002.pdf">Arquivo
+                                        59</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/projetosDeLeis/2023/003-2.pdf">Arquivo
+                                        60</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/projetosDeLeis/2023/003.pdf">Arquivo
+                                        61</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/projetosDeLeis/2023/004.pdf">Arquivo
+                                        62</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/projetosDeLeis/2023/006.pdf">Arquivo
+                                        64</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/projetosDeLeis/2023/007.pdf">Arquivo
+                                        65</a></li>
 
-                </ol>
-              </div>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-3 my-3">
-            <div class="card-doc text-center">
-              <div class="card-body">
-                <h3 class="card-title-doc">Portarias</h3>
-                <ol>
-                  <h3 class="text-center">2021</h3>
-                </a><li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/001.pdf">Arquivo 1</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/002.pdf">Arquivo 2</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/003.pdf">Arquivo 3</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/004.pdf">Arquivo 4</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/005.pdf">Arquivo 5</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/006.pdf">Arquivo 6</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/007.pdf">Arquivo 7</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/008.pdf">Arquivo 8</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/009.pdf">Arquivo 9</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/010.pdf">Arquivo 10</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/011.pdf">Arquivo 11</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/012.pdf">Arquivo 12</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/013.pdf">Arquivo 13</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2021/portarias/014.pdf">Arquivo 14</a></li>
-                <h3 class="text-center">2022</h3>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2022/portarias/001.pdf">Arquivo 15</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2022/portarias/002.pdf">Arquivo 16</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2022/portarias/003.pdf">Arquivo 17</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2022/portarias/004.pdf">Arquivo 18</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2022/portarias/005.pdf">Arquivo 19</a></li>
-                <h3 class="text-center">2023</h3>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/001.pdf">Arquivo 20</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/002.pdf">Arquivo 21</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/003.pdf">Arquivo 22</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/009.pdf">Arquivo 23</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/010.pdf">Arquivo 24</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/011.pdf">Arquivo 25</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/012.pdf">Arquivo 26</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/013.pdf">Arquivo 27</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/014.pdf">Arquivo 28</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/015.pdf">Arquivo 29</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/016.pdf">Arquivo 28</a></li>
-                <li><a target= '_blank'
-                    href="../docs/portaria/2023/017.pdf">Arquivo 29</a></li>
-              </ol>
+
+            <div class="row justify-content-center docc">
+                <div class="col-md-3 my-3">
+                    <div class="card-doc text-center">
+                        <div class="card-body">
+                            <h3 class="card-title-doc">Requerimentos</h3>
+                            <ol>
+                                <h3 class="text-center">2021</h3>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/001.pdf">Arquivo
+                                        1</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/002.pdf">Arquivo
+                                        2</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/003.pdf">Arquivo
+                                        3</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/004.pdf">Arquivo
+                                        4</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/005.pdf">Arquivo
+                                        5</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/006.pdf">Arquivo
+                                        6</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/007.pdf">Arquivo
+                                        7</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/008.pdf">Arquivo
+                                        8</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/009.pdf">Arquivo
+                                        9</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/010.pdf">Arquivo
+                                        10</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/011.pdf">Arquivo
+                                        11</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/012.pdf">Arquivo
+                                        12</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/013.pdf">Arquivo
+                                        13</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/014.pdf">Arquivo
+                                        14</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/015.pdf">Arquivo
+                                        15</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/016.pdf">Arquivo
+                                        16</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/017.pdf">Arquivo
+                                        17</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/018.pdf">Arquivo
+                                        18</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/019.pdf">Arquivo
+                                        19</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/020.pdf">Arquivo
+                                        20</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/021.pdf">Arquivo
+                                        21</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/022.pdf">Arquivo
+                                        22</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/023.pdf">Arquivo
+                                        23</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/024.pdf">Arquivo
+                                        24</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2021/025.pdf">Arquivo
+                                        25</a></li>
+                                <h3 class="text-center">2022</h3>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/001.pdf">Arquivo
+                                        26</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/001.pdf">Arquivo
+                                        27</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/003.pdf">Arquivo
+                                        28</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/004.pdf">Arquivo
+                                        29</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/005.pdf">Arquivo
+                                        30</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/006.pdf">Arquivo
+                                        31</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/007.pdf">Arquivo
+                                        32</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/008.pdf">Arquivo
+                                        33</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/012.pdf">Arquivo
+                                        34</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/013.pdf">Arquivo
+                                        35</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/014.pdf">Arquivo
+                                        36</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/015.pdf">Arquivo
+                                        37</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/016.pdf">Arquivo
+                                        38</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/017.pdf">Arquivo
+                                        39</a></li>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2022/1652102600.pdf">Arquivo
+                                        40</a></li>
+                                <h3 class="text-center">2023</h3>
+                                <li><a target= '_blank'
+                                        href="../docs/requerimentos/2023/001.pdf">Arquivo
+                                        41</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 my-3">
+                    <div class="card-doc text-center">
+                        <div class="card-body">
+                            <h3 class="card-title-doc">Responsabilidade Fiscal</h3>
+                            <ol>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/001.pdf">Arquivo
+                                        1</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/002.pdf">Arquivo
+                                        2</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/003.pdf">Arquivo
+                                        3</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/004.pdf">Arquivo
+                                        4</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/005.pdf">Arquivo
+                                        5</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/006.pdf">Arquivo
+                                        6</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/007.pdf">Arquivo
+                                        7</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/008.pdf">Arquivo
+                                        8</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/009.pdf">Arquivo
+                                        9</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/010.pdf">Arquivo
+                                        10</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/011.pdf">Arquivo
+                                        11</a></li>
+                                <li><a target="_blank"
+                                        href="../docs/responsabilidadefiscal/012.pdf">Arquivo
+                                        12</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-        <div class="col-md-3 my-3">
-          <div class="card-doc text-center">
-            <div class="card-body">
-              <h3 class="card-title-doc">Projetos de Lei</h3>
-              <ol>
-                <h3 class="text-center">2021</h3>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/01.pdf">Arquivo 1</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/001.pdf">Arquivo 2</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/0001.pdf">Arquivo 3</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/002.pdf">Arquivo 4</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/003.pdf">Arquivo 5</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/004.pdf">Arquivo 6</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/005.pdf">Arquivo 7</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/006.pdf">Arquivo 8</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/007.pdf">Arquivo 9</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/008.pdf">Arquivo 10</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/009.pdf">Arquivo 11</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/010.pdf">Arquivo 12</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/011.pdf">Arquivo 13</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/013.pdf">Arquivo 14</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/014.pdf">Arquivo 15</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/020.pdf">Arquivo 16</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/021.pdf">Arquivo 17</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/022.pdf">Arquivo 18</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/023.pdf">Arquivo 19</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/024.pdf">Arquivo 20</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/025.pdf">Arquivo 21</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/026.pdf">Arquivo 22</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/1646916320.pdf">Arquivo
-                    23</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2021/PPA.pdf">Arquivo 24</a></li>
-                <h3 class="text-center">2022</h3>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/001.pdf">Arquivo 25</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/002.pdf">Arquivo 26</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/003.pdf">Arquivo 27</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/004.pdf">Arquivo 28</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/005.pdf">Arquivo 29</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/006.pdf">Arquivo 30</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/008.pdf">Arquivo 31</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/009.pdf">Arquivo 32</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/010.pdf">Arquivo 33</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/011.pdf">Arquivo 34</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/012.pdf">Arquivo 35</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/013.pdf">Arquivo 36</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/014.pdf">Arquivo 37</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/015.pdf">Arquivo 38</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/016.pdf">Arquivo 39</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/017.pdf">Arquivo 40</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/019.pdf">Arquivo 41</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/020.pdf">Arquivo 42</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/021.pdf">Arquivo 43</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/022.pdf">Arquivo 44</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/024.pdf">Arquivo 45</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/025.pdf">Arquivo 46</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/026.pdf">Arquivo 47</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/027.pdf">Arquivo 48</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/030.pdf">Arquivo 49</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/031.pdf">Arquivo 50</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/032.pdf">Arquivo 51</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/033.pdf">Arquivo 52</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/034.pdf">Arquivo 53</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/L001.pdf">Arquivo 54</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/LOA.pdf">Arquivo 55</a></li>
-                <li><a target="_blank"
-                    href="../docs/projetosDeLeis/2022/Resolução001.pdf">Arquivo
-                    56</a></li>
-                <h3 class="text-center">2023</h3>
-                <li><a target= '_blank'
-                    href="../docs/projetosDeLeis/2023/001.pdf">Arquivo 57</a></li>
-                <li><a target= '_blank'
-                    href="../docs/projetosDeLeis/2023/001-2.pdf">Arquivo 58</a></li>
-                <li><a target= '_blank'
-                    href="../docs/projetosDeLeis/2023/002.pdf">Arquivo 59</a></li>
-                <li><a target= '_blank'
-                    href="../docs/projetosDeLeis/2023/003-2.pdf">Arquivo 60</a></li>
-                <li><a target= '_blank'
-                    href="../docs/projetosDeLeis/2023/003.pdf">Arquivo 61</a></li>
-                <li><a target= '_blank'
-                    href="../docs/projetosDeLeis/2023/004.pdf">Arquivo 62</a></li>
-                <li><a target= '_blank'
-                    href="../docs/projetosDeLeis/2023/005.pdf">Arquivo 63</a></li>
-              </ol>
+
+
+
+
+
+        <footer class="bg-dark text-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-5 mb-md-0 text-center">
+                        <h4>CNPJ.: 08.560.799/0001-82</h4>
+                        <p class="mb-0">Horário de Atendimento</p>
+                        <p>Segunda à Sexta: De 07:00 às 13:00</p>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-0 text-center">
+                        <h4>Endereço Físico</h4>
+                        <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
+                        <p>Tavares / PB - CEP: 58753-000</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h4>Telefones Úteis</h4>
+                        <a href="tel: (83) 3450-1023">
+                            <p>(83) 3450-1023</p>
+                        </a>
+                        <a href="tel:(83) 99929-4045">
+                            <p>(83) 99929-4045</p>
+                        </a>
+                    </div>
+                </div>
+                <hr class="my-5" />
+                <p class="mt-5 text-center">
+                    © 2023 Câmara Municipal de Tavares. Todos os direitos
+                    reservados.
+                </p>
             </div>
-          </div>
-        </div>
-      </div>
+        </footer>
 
-      <div class="row justify-content-center docc">
-        <div class="col-md-3 my-3">
-          <div class="card-doc text-center">
-            <div class="card-body">
-              <h3 class="card-title-doc">Requerimentos</h3>
-              <ol>
-                <h3 class="text-center">2021</h3>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/001.pdf">Arquivo 1</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/002.pdf">Arquivo 2</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/003.pdf">Arquivo 3</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/004.pdf">Arquivo 4</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/005.pdf">Arquivo 5</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/006.pdf">Arquivo 6</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/007.pdf">Arquivo 7</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/008.pdf">Arquivo 8</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/009.pdf">Arquivo 9</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/010.pdf">Arquivo 10</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/011.pdf">Arquivo 11</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/012.pdf">Arquivo 12</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/013.pdf">Arquivo 13</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/014.pdf">Arquivo 14</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/015.pdf">Arquivo 15</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/016.pdf">Arquivo 16</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/017.pdf">Arquivo 17</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/018.pdf">Arquivo 18</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/019.pdf">Arquivo 19</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/020.pdf">Arquivo 20</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/021.pdf">Arquivo 21</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/022.pdf">Arquivo 22</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/023.pdf">Arquivo 23</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/024.pdf">Arquivo 24</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2021/025.pdf">Arquivo 25</a></li>
-                <h3 class="text-center">2022</h3>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/001.pdf">Arquivo 26</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/001.pdf">Arquivo 27</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/003.pdf">Arquivo 28</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/004.pdf">Arquivo 29</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/005.pdf">Arquivo 30</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/006.pdf">Arquivo 31</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/007.pdf">Arquivo 32</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/008.pdf">Arquivo 33</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/012.pdf">Arquivo 34</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/013.pdf">Arquivo 35</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/014.pdf">Arquivo 36</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/015.pdf">Arquivo 37</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/016.pdf">Arquivo 38</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/017.pdf">Arquivo 39</a></li>
-                <li><a target= '_blank'
-                    href="../docs/requerimentos/2022/1652102600.pdf">Arquivo
-                    40</a></li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 my-3">
-          <div class="card-doc text-center">
-            <div class="card-body">
-              <h3 class="card-title-doc">Responsabilidade Fiscal</h3>
-              <ol>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/001.pdf">Arquivo 1</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/002.pdf">Arquivo 2</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/003.pdf">Arquivo 3</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/004.pdf">Arquivo 4</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/005.pdf">Arquivo 5</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/006.pdf">Arquivo 6</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/007.pdf">Arquivo 7</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/008.pdf">Arquivo 8</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/009.pdf">Arquivo 9</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/010.pdf">Arquivo 10</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/011.pdf">Arquivo 11</a></li>
-                <li><a target="_blank"
-                    href="../docs/responsabilidadefiscal/012.pdf">Arquivo 12</a></li>
-              </ol>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-
-    <footer class="bg-dark text-light py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-md-0 text-center">
-            <h4>CNPJ.: 08.560.799/0001-82</h4>
-            <p class="mb-0">Horário de Atendimento</p>
-            <p>Segunda à Sexta: De 07:00 às 13:00</p>
-          </div>
-          <div class="col-md-4 mb-5 mb-md-0 text-center">
-            <h4>Endereço Físico</h4>
-            <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
-            <p>Tavares / PB - CEP: 58753-000</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <h4>Telefones Úteis</h4>
-            <a href="tel: (83) 3450-1023">
-              <p>(83) 3450-1023</p>
-            </a>
-            <a href="tel:(83) 99929-4045">
-              <p>(83) 99929-4045</p>
-            </a>
-          </div>
-        </div>
-        <hr class="my-5" />
-        <p class="mt-5 text-center">
-          © 2023 Câmara Municipal de Tavares. Todos os direitos
-          reservados.
-        </p>
-      </div>
-    </footer>
-
-    <!-- Script animation -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+        <!-- Script animation -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
     AOS.init();
   </script>
-    <!-- Bootstrap Js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"></script>
+        <!-- Bootstrap Js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
 
-    <script src="../script.js"></script>
-  </body>
+        <script src="../script.js"></script>
+    </body>
 </html>
