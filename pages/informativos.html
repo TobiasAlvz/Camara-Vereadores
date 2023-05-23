@@ -8,8 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-      />
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="shortcut icon" href="../img/favicon.png" type="favicon" />
@@ -27,695 +26,748 @@
           viewBox="0 0 16 16">
           <path
             d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0
-            .496-.868L8 8.71V3.5z"
-            />
-            <path
-              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1
-              14 0z"
-              />
-            </svg>
-            <span id="today"></span>
-          </div>
-          <div></div>
-        </section>
+            .496-.868L8 8.71V3.5z" />
+          <path
+            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1
+              14 0z" />
+        </svg>
+        <span id="today"></span>
+      </div>
+      <div></div>
+    </section>
 
-        <header class="sticky-top">
-          <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-            <div
-              class="container d-flex justify-content-around
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div
+          class="container d-flex justify-content-around
               align-content-around">
-              <a href="../index.html"><img
-                  src="../img/logo-full-removebg-preview.png" alt="" srcset=""
-                  /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
+          <a href="../index.html"><img
+              src="../img/logo-full-removebg-preview.png" alt srcset /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex mb- mb-lg-0">
+              <li class="nav-item mb-0">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0"
+                  active
+                  pb-0
+                  aria-current="page"
+                  href="../index.html">Início</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">A Câmara</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="../docs/regimentoInterno.pdf">Regimento
+                      Interno</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="vereadores.html">Vereadores</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="consulta.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-toggle="dropdown">Consulta</a>
+                <ul
+                  class="dropdown-menu hover"
+                  aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="consulta.html">Agenda da
+                      Câmara</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item"
+                      href="../pages/consulta.html#documentos">Documentos</a>
+                  </li>
+
+                  <li>
+                    <a
+                      target="_blank"
+                      class="dropdown-item"
+                      href="../docs/PCA.pdf">PCA
+                      - Prestação de Contas Anuais</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="../img/lei de acesso a informacao.pdf">Lei de
+                      Acesso a Informação</a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="dropdown-item"
+                      href="../docs/lei-organica.pdf">Lei
+                      Orgânica</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#vereadores">SIC</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://tavares.pb.gov.br/assuntos/portal-da-transparencia">Transparência
+                      Fiscal</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-toggle="dropdown">
+                  Informativos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="diario.html">Diário
+                      Oficial</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="informativos.html#news">Notícias</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#faq">Perguntas
+                      Frequentes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  id="nav-link"
+                  class="nav-link active me-3 pb-0"
+                  href="contato.html">Fale Conosco</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="climate">
+            <span id="climate"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="news5" class="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../img/diario3.jpeg" alt="Imagem da notícia"
+              class="img-fluid w-75">
+          </div>
+          <div class="col-md-6">
+            <h2>Câmara Municipal de Tavares-PB realiza sessão ordinária com
+              aprovação de projetos e requerimentos</h2>
+            <p>No plenário da casa de lei, em 10 de maio, ocorreu uma sessão
+              ordinária promovida pela Câmara Municipal de Tavares-PB. Durante a
+              reunião, os vereadores mencionados estiveram presentes, todos sob
+              a presidência de José Edson Cordeiro.</p>
+            <p>A sessão teve início com a verificação do quórum legal, seguida
+              pela leitura e aprovação unânime da ata da sessão anterior. Em
+              seguida, foram discutidos e aprovados por unanimidade os projetos
+              de decreto legislativo n° 001/2023 e n° 002/2023.</p>
+            <p>Também foi aprovado por unanimidade o requerimento n° 008/2023,
+              de autoria do vereador Jose Wilson Lopes, que solicita a limpeza
+              das paredes dos açudes, cachoeira lisa e cacimbinha. Ao encerrar a
+              sessão, o presidente convidou todos os presentes para a próxima
+              reunião agendada para o dia 17.05.2023.</p>
+            <p>Além disso, os membros e relatores das comissões foram convocados
+              para se reunirem e votarem o projeto n° 006/2023 do poder
+              executivo.</p>
+            <p><em>Quarta-Feira, 10 de Maio de 2023</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="news4" class="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../img/diario2.jpeg" alt="Imagem da notícia"
+              class="img-fluid w-75">
+          </div>
+          <div class="col-md-6">
+            <h2>Câmara Municipal de Tavares-PB realiza sessão ordinária para
+              discutir projetos e indicações</h2>
+            <p>No plenário da casa de lei, em 26 de abril, foi realizada uma
+              sessão ordinária pela Câmara Municipal de Tavares-PB. A reunião
+              contou com a presença dos vereadores mencionados, todos sob a
+              presidência de José Edson Cordeiro.</p>
+            <p>Durante a sessão, foram apresentados dois projetos do poder
+              executivo, n° 007/2023 e n° 008/2023, que agora serão avaliados
+              pelas comissões competentes. Além disso, a indicação n° 002/2023,
+              que visa conceder auxílio financeiro ao grupo cultural Junina
+              Sacode, e o requerimento n° 007/2023, solicitando a capacitação em
+              primeiros socorros para professores e funcionários de escolas
+              públicas, foram aprovados por unanimidade.</p>
+            <p>Também foram eleitos os membros das comissões de legislação,
+              finanças e orçamento, obras e serviços públicos, agroindústrias,
+              comércio e turismo, e educação, saúde e assistência social.</p>
+            <p><em>Quarta-Feira, 26 de Abril de 2023</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section id="news" class="news">
+      <div id="news1" class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../img/noticia1.png" alt="Imagem da notícia"
+              class="img-fluid w-75">
+          </div>
+          <div class="col-md-6">
+            <h2>Vereadores participam de mais uma reunião ordinária da
+              câmara municipal de Tavares</h2>
+            <p>Na última quarta-feira, dia 29 de março, a câmara municipal
+              de Tavares realizou mais uma sessão ordinária, quando foram
+              aprovados vários projetos de lei e requerimentos que vão
+              trazer benefícios para a população do município.
+
+              Entre as várias matérias que tramitaram nesta sessão e foram
+              aprovadas pelo plenário da Casa, destaca-se os projetos
+              apresentados pela vereadora Vitória Marques, que solicita ao
+              poder executivo do município reconhecer os grupos culturais de
+              dança Junina Sacode e Junina Florescer como patrimônio
+              cultural do município.</p>
+            <p><em>Sexta-Feira, 31 de Março de 2023</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="news">
+      <div id="news2" class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../img/noticias2.jpg" alt="Imagem da notícia"
+              class="img-fluid w-75">
+          </div>
+          <div class="col-md-6">
+            <h2>Câmara de Tavares realiza a primeira sessão ordinária do ano
+              de 2023</h2>
+            <p>Na manhã desta quarta-feira, dia 22 de Fevereiro, às 10 horas
+              da manhã na Casa José Casusa de Melo, Câmara de Tavares,
+              aconteceu a sessão ordinária que abre os trabalhos do
+              legislativo municipal no ano de 2023.
+
+              A reunião foi a primeira conduzida pela nova mesa diretora,
+              que tem como presidente o Sr Edson Cordeiro que conduzirá os
+              trabalhos do legislativo municipal pelos próximos dois anos,
+              biênio 2023-2024.</p>
+            <p><em>Quinta-Feira, 23 de Fevereiro de 2023</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="news3" class="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../img/edson.jpg" alt="Imagem da notícia"
+              class="img-fluid w-75">
+          </div>
+          <div class="col-md-6">
+            <h2>José Edson Cordeiro toma posse como novo presidente da
+              câmara municipal de Tavares pelos próximos dois anos, biênio
+              2023-2024</h2>
+            <p>A Câmara Municipal de Tavares iniciou o ano de 2023 com a
+              posse da nova Mesa Diretora, na tarde deste domingo, dia 1º de
+              Janeiro, em uma sessão solene bastante prestigiada e que
+              contou com a presença de autoridades municipais, familiares
+              dos vereadores e população em geral.
+
+              A sessão solene foi realizada das 17h e, após a leitura do
+              termo de posse, os novos membros da mesa diretora assinaram o
+              livro de ata, oficializando o ato. A nova mesa Diretora é
+              composta por José Edson Cordeiro como presidente,
+              Vice-presidente Lenira Almeida Marinho, 1° secretário Adão
+              Luiz de Almeida e 2° secretário Marcelo Bezerra de Sousa.
+
+              A nova mesa diretora da Casa vai conduzir os trabalhos do
+              legislativo municipal pelos próximos dois anos, biênio de 2023
+              a 2024. Os membros que compõem a nova mesa diretora da câmara
+              municipal foram eleitos em uma eleição realizada no dia 1º de
+              Janeiro de 2021.</p>
+            <p><em>Segunda-Feira, 2 de Janeiro de 2023</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="faq" class="FAQ">
+      <h2>Perguntas Frequentes</h2>
+      <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Como faço para apresentar um pedido de informação em meio
+              físico (papel)?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Para apresentar um pedido de informação por meio
+                físico (papel), basta se dirigir até a sede do Serviço de
+                Informação ao Cidadão (SIC), na Câmara Municipal de Tavares,
+                localizada na Rua Manoel Lima, 228, - Centro - Tavares -
+                Paraíba | de segunda à sexta-feira, das 08h às 13h. O pedido
+                de informação é realizado por preenchimento de formulário,
+                seguido de protocolo, a cumprir o prazo de até 20 dias para
+                resposta.
+
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                Lei de Acesso à Informação - Fique sabendo!
               </button>
-
-              <div
-                class="collapse navbar-collapse justify-content-center"
-                id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex mb- mb-lg-0">
-                  <li class="nav-item mb-0">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0"
-                      active
-                      pb-0
-                      aria-current="page"
-                      href="../index.html">Início</a>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <h2>1 - O que é a Lei de Acesso à Informação?</h2>
+                    <p>
+                      A Lei de Acesso à Informação (LAI), nº 12.527
+                      publicada
+                      em
+                      18 de novembro de 2011, regulamenta o direito previsto
+                      na
+                      Constituição, de qualquer cidadão solicitar e receber
+                      dos
+                      órgãos, entidades públicas e poderes constituídos,
+                      informações públicas por eles produzidas ou
+                      custodiadas.
+                    </p>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false">A Câmara</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="../docs/regimentoInterno.pdf">Regimento
-                          Interno</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="vereadores.html">Vereadores</a>
-                      </li>
-                    </ul>
+                  <li>
+                    <h2>2 - Quando a Lei de Acesso à Informação entrou em
+                      vigor?</h2>
+                    <p>
+                      A Lei de Acesso a informação entrou em vigor em 16 de
+                      maio
+                      de 2012, 180 dias após sua publicação no Diário
+                      Oficial
+                      da
+                      União
+                    </p>
                   </li>
-
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="consulta.html"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-toggle="dropdown">Consulta</a>
-                    <ul
-                      class="dropdown-menu hover"
-                      aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="consulta.html">Agenda da
-                          Câmara</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item"
-                          href="../pages/consulta.html#documentos">Documentos</a>
-                      </li>
-
-                      <li>
-                        <a
-                          target="_blank"
-                          class="dropdown-item"
-                          href="../docs/PCA.pdf">PCA
-                          - Prestação de Contas Anuais</a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="../img/lei de acesso a informacao.pdf">Lei de
-                          Acesso a Informação</a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          class="dropdown-item"
-                          href="../docs/lei-organica.pdf">Lei
-                          Orgânica</a>
-                      </li>
-
-
-
-
-                      <li>
-                        <a class="dropdown-item" href="#vereadores">SIC</a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="https://tavares.pb.gov.br/assuntos/portal-da-transparencia">Transparência
-                          Fiscal</a>
-                      </li>
-                    </ul>
+                  <li>
+                    <h2>3 - O que são informações?</h2>
+                    <p>
+                      Informações são dados, processados ou não, que podem
+                      ser
+                      utilizados para produção e transmissão de
+                      conhecimento,
+                      registrados em qualquer suporte, linguagem ou formato.
+                    </p>
                   </li>
-
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-toggle="dropdown">
-                      Informativos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="diario.html">Diário
-                          Oficial</a>
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="informativos.html#news">Notícias</a>
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="#faq">Perguntas
-                          Frequentes</a>
-                      </li>
-                    </ul>
+                  <li>
+                    <h2>
+                      4 - A que tipo de informação os cidadãos podem ter
+                      acesso
+                      pela Lei de Acesso?
+                    </h2>
+                    <p>
+                      A partir da vigência da Lei de Acesso à Informação, a
+                      publicidade passou a ser a regra e o sigilo exceção.
+                      Dessa
+                      forma, o acesso a qualquer informação pública
+                      produzida
+                      ou
+                      custodiada pelos órgãos e entidades da administração
+                      pública, torna-se obrigatoriamente aberta para o
+                      cidadão,
+                      exceto algumas exceções, notadamente àquelas cuja
+                      divulgação
+                      indiscriminada por trazer riscos à sociedade ou ao
+                      Estado.
+                    </p>
                   </li>
-                  <li class="nav-item">
-                    <a
-                      id="nav-link"
-                      class="nav-link active me-3 pb-0"
-                      href="contato.html">Fale Conosco</a>
+                  <li>
+                    <h2>
+                      5 - É preciso justificar o pedido de acesso à
+                      informação?
+                    </h2>
+                    <p>
+                      Não. De acordo com o art. 10, § 8° da LAI, é proibido
+                      exigir
+                      que o solicitante informe os motivos de sua
+                      solicitação.
+                      Entretanto, o órgão/entidade pode dialogar com o
+                      cidadão
+                      para entender melhor a demanda, de modo a fornecer a
+                      informação mais adequada a sua solicitação.
+                    </p>
+                  </li>
+                  <li>
+                    <h2>6 - O acesso à informação é gratuito?</h2>
+                    <p>
+                      Conforme dispõe o art. 12 da LAI, o serviço de busca e
+                      fornecimento da informação é gratuito. Exceto, em
+                      casos
+                      dos
+                      serviços e dos materiais utilizados para alguma
+                      reprodução
+                      ou envio de cópia de documentos. Neste caso, o órgão
+                      ou
+                      entidade deverá disponibilizar ao solicitante um
+                      Documento
+                      de Arrecadação Municipal (DAM) ou documento
+                      equivalente
+                      para
+                      que ele possa realizar o pagamento.
+                    </p>
+                  </li>
+                  <li>
+                    <h2>7 - O que é o Decreto 7.724/2012?</h2>
+                    <p>
+                      A LAI contém dispositivos de aplicação imediata a
+                      todos
+                      os
+                      órgãos e entidades, bem como, dispositivos que
+                      necessitam
+                      de
+                      regulamentação específica por cada poder e ente da
+                      federação. No âmbito do poder executivo federal, a
+                      regulamentação específica da Lei, ocorreu com a
+                      publicação
+                      do Decreto nº 7.724, de 16 de maio de 2012. E
+                      estabeleceu
+                      os
+                      procedimentos para a garantia do acesso à informação e
+                      para
+                      a classificação de informações sob restrição de acesso
+                      no
+                      Governo Federal.
+                    </p>
+                  </li>
+                  <li>
+                    <h2>
+                      8 - Quais são os prazos para resposta dos pedidos
+                      apresentados com base na da Lei de Acesso à
+                      Informação?
+                    </h2>
+                    <p>
+                      Se a informação estiver disponível, ela deve ser
+                      entregue
+                      imediatamente ao solicitante. Caso contrário, o órgão
+                      ou
+                      entidade tem até 20 (vinte) dias para atender ao
+                      pedido,
+                      a
+                      partir da data de protocolo do pedido, prazo que pode
+                      ser
+                      prorrogado por mais 10 (dez) dias, se houver
+                      justificativa
+                      expressa.
+                    </p>
+                  </li>
+                  <li>
+                    <h2>9 - O que é transparência ativa?</h2>
+                    <p>
+                      É a divulgação de dados por iniciativa do próprio
+                      setor
+                      público, independente de requerimentos ou
+                      solicitações.
+                      Este
+                      processo ocorre geralmente por meio virtual, através
+                      da
+                      publicação de informações divulgadas na internet, em
+                      seções
+                      inseridas em sites dos órgãos e entidades.
+                    </p>
+                  </li>
+                  <li>
+                    <h2>
+                      10 - Que informações os órgãos e entidades do Poder
+                      Executivo federal são obrigados a disponibilizar
+                      proativamente em seus sites?
+                    </h2>
+                    <p>
+                      Informações públicas de interesse coletivo ou geral,
+                      conforme estabelece o art. 8º LAI e o decreto nº
+                      7.724/2012,
+                      que determina como dever dos órgãos e entidades do
+                      Poder
+                      Executivo Federal, Estadual e Municipal, a publicação
+                      detalhada dos seguintes processos:
+                      - Estrutura organizacional e competências dos órgãos,
+                      além
+                      dos endereços e telefones de suas unidades e horários
+                      de
+                      atendimento ao público;
+                      - Programas, projetos, ações, obras e atividades,
+                      indicando
+                      a unidade responsável, principais metas e resultados e
+                      indicadores (se existirem);
+                      - Repasses ou transferências de recursos financeiros;
+                      - Execução orçamentária e financeira detalhada;
+                      - Procedimentos licitatórios, com os contratos
+                      celebrados
+                      e
+                      notas de empenho emitidas;
+                      - Respostas às perguntas mais frequêntes da sociedade;
+                      - Informações sobre o Serviço de Informações ao
+                      Cidadão;
+                    </p>
+                  </li>
+                  <li>
+                    <h2>11 - O que é transparência passiva?</h2>
+                    <p>
+                      É a disponibilização de informações públicas em
+                      atendimento
+                      às demandas específicas de uma pessoa física ou
+                      jurídica.
+                    </p>
+                  </li>
+                  <li>
+                    <h2>12 - O que é o SIC?</h2>
+                    <p>
+                      É o Serviço de Informações ao Cidadão - SIC, que
+                      permite
+                      que
+                      qualquer cidadão, solicite pedidos de acesso à
+                      informação,
+                      acompanhe e receba respostas sobre questionamentos
+                      realizados a órgãos e entidades públicas.
+                      Funções do SIC.
+                      - Atender e orientar os cidadãos sobre pedidos de
+                      informação;
+                      - Informar sobre a tramitação de documentos e
+                      requerimentos
+                      de acesso à informação;
+                      - Receber e registrar os pedidos de acesso e devolver
+                      as
+                      respostas aos solicitantes;
+                    </p>
+                  </li>
+                  <li>
+                    <h2>
+                      13 - Como são contados os prazos para resposta das
+                      Secretarias, de acordo com a LAI?
+                    </h2>
+                    <p>
+                      Os prazos de respostas começam a contar no dia
+                      seguinte
+                      do
+                      registro da solicitação realizada pelo sistema,
+                      segundo
+                      a
+                      Lei do Processo Administrativo – Lei 9.784/99.
+                      Entretanto, existem situações especiais:
+                      - Devido ao horário de funcionamento do SIC, os
+                      pedidos,
+                      recursos e reclamações realizados entre 12h01min e
+                      23h59min
+                      serão considerados como se tivessem sido realizados no
+                      dia
+                      útil seguinte e a contagem só começará a contar a
+                      partir
+                      do
+                      primeiro dia útil posterior ao dia considerado;
+                      - Solicitações cujo prazo inicial comece no final de
+                      semana
+                      ou feriado, terão a contagem iniciada no próximo dia
+                      útil;
+                      - Quando o prazo final para responder a solicitação
+                      coincidir com final de semana ou feriado previsto em
+                      portaria deste município, ele será postergado para o
+                      próximo
+                      dia útil. Por isso, o prazo para envio da resposta
+                      pode
+                      não
+                      ser exatamente 20 dias corridos, conforme estabelece a
+                      LAI.
+                    </p>
                   </li>
                 </ul>
               </div>
-
-              <div class="climate">
-                <span id="climate"></span>
-              </div>
             </div>
-          </nav>
-        </header>
+          </div>
 
-        <section id="news" class="news">
-          <div id="news1" class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="../img/noticia1.png" alt="Imagem da notícia"
-                  class="img-fluid w-75">
-              </div>
-              <div class="col-md-6">
-                <h2>Vereadores participam de mais uma reunião ordinária da
-                  câmara municipal de Tavares</h2>
-                <p>Na última quarta-feira, dia 29 de março, a câmara municipal
-                  de Tavares realizou mais uma sessão ordinária, quando foram
-                  aprovados vários projetos de lei e requerimentos que vão
-                  trazer benefícios para a população do município.
-
-                  Entre as várias matérias que tramitaram nesta sessão e foram
-                  aprovadas pelo plenário da Casa, destaca-se os projetos
-                  apresentados pela vereadora Vitória Marques, que solicita ao
-                  poder executivo do município reconhecer os grupos culturais de
-                  dança Junina Sacode e Junina Florescer como patrimônio
-                  cultural do município.</p>
-                <p><em>Sexta-Feira, 31 de Março de 2023</em></p>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                Para entrar em contato preciso me registrar?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Não. De acordo com o Decreto nº 7.185/2010 (Art. 2º, §2º,
+                Inc. III), não pode haver exigências de cadastramento de
+                usuários ou utilização de senhas para acesso. O acesso deve
+                ser livre. Todavia, ao se IDENTIFICAR o SIC têm o dever
+                ético e legal de resguardar o sigilo de seus dados pessoais.
               </div>
             </div>
           </div>
-        </section>
 
-        <hr>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                Quais os Endereços das Secretarias e Órgãos Municipais?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Os endereços das secretarias e órgãos municipais estão
+                disponíveis no site oficial da Câmara de Tavares
+                (www.camaratavares.pb.gov.br). Para ter acesso basta clicar
+                no menu Secretaria e Órgãos Municipal, localizado do lado
+                esquerdo da plataforma e escolher a opção requerida e
+                verificar seus respectivos endereços.
 
-        <section class="news">
-          <div id="news2" class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="../img/noticias2.jpg" alt="Imagem da notícia"
-                  class="img-fluid w-75">
-              </div>
-              <div class="col-md-6">
-                <h2>Câmara de Tavares realiza a primeira sessão ordinária do ano
-                  de 2023</h2>
-                <p>Na manhã desta quarta-feira, dia 22 de Fevereiro, às 10 horas
-                  da manhã na Casa José Casusa de Melo, Câmara de Tavares,
-                  aconteceu a sessão ordinária que abre os trabalhos do
-                  legislativo municipal no ano de 2023.
-
-                  A reunião foi a primeira conduzida pela nova mesa diretora,
-                  que tem como presidente o Sr Edson Cordeiro que conduzirá os
-                  trabalhos do legislativo municipal pelos próximos dois anos,
-                  biênio 2023-2024.</p>
-                <p><em>Quinta-Feira, 23 de Fevereiro de 2023</em></p>
               </div>
             </div>
           </div>
-        </section>
 
-        <hr>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive">
+                Quem pode falar com o SIC da Prefeitura?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Qualquer cidadão, brasileiro ou não, pode apresentar
+                sugestões, reclamações, solicitações ou elogios, sobre
+                assuntos relacionados aos serviços prestados pela Prefeitura
+                Municipal, bem como, atos de irregularidades, se for o caso.
+                Tem alguma dúvida, sugestão, reclamação ou denúncias? Entre
+                em contato.
 
-        <section id="news3" class="news">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="../img/edson.jpg" alt="Imagem da notícia"
-                  class="img-fluid w-75">
-              </div>
-              <div class="col-md-6">
-                <h2>José Edson Cordeiro toma posse como novo presidente da
-                  câmara municipal de Tavares pelos próximos dois anos, biênio
-                  2023-2024</h2>
-                <p>A Câmara Municipal de Tavares iniciou o ano de 2023 com a
-                  posse da nova Mesa Diretora, na tarde deste domingo, dia 1º de
-                  Janeiro, em uma sessão solene bastante prestigiada e que
-                  contou com a presença de autoridades municipais, familiares
-                  dos vereadores e população em geral.
-
-                  A sessão solene foi realizada das 17h e, após a leitura do
-                  termo de posse, os novos membros da mesa diretora assinaram o
-                  livro de ata, oficializando o ato. A nova mesa Diretora é
-                  composta por José Edson Cordeiro como presidente,
-                  Vice-presidente Lenira Almeida Marinho, 1° secretário Adão
-                  Luiz de Almeida e 2° secretário Marcelo Bezerra de Sousa.
-
-                  A nova mesa diretora da Casa vai conduzir os trabalhos do
-                  legislativo municipal pelos próximos dois anos, biênio de 2023
-                  a 2024. Os membros que compõem a nova mesa diretora da câmara
-                  municipal foram eleitos em uma eleição realizada no dia 1º de
-                  Janeiro de 2021.</p>
-                <p><em>Segunda-Feira, 2 de Janeiro de 2023</em></p>
+                Para casos de erro ou dificuldade no acesso do site, envie
+                um e-mail para contato@camaratavares.pb.gov.br ou preencha o
+                formulário de contato online, comunicando o problema.
+                Agradecemos sua colaboração!
               </div>
             </div>
           </div>
-        </section>
 
-        <section id="faq" class="FAQ">
-          <h2>Perguntas Frequentes</h2>
-          <div class="accordion" id="accordionExample">
+        </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Como faço para apresentar um pedido de informação em meio
-                  físico (papel)?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>Para apresentar um pedido de informação por meio
-                    físico (papel), basta se dirigir até a sede do Serviço de
-                    Informação ao Cidadão (SIC), na Câmara Municipal de Tavares,
-                    localizada na Rua Manoel Lima, 228, - Centro - Tavares -
-                    Paraíba | de segunda à sexta-feira, das 08h às 13h. O pedido
-                    de informação é realizado por preenchimento de formulário,
-                    seguido de protocolo, a cumprir o prazo de até 20 dias para
-                    resposta.
+      </section>
 
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
-                    Lei de Acesso à Informação - Fique sabendo!
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <h2>1 - O que é a Lei de Acesso à Informação?</h2>
-                        <p>
-                          A Lei de Acesso à Informação (LAI), nº 12.527
-                          publicada
-                          em
-                          18 de novembro de 2011, regulamenta o direito previsto
-                          na
-                          Constituição, de qualquer cidadão solicitar e receber
-                          dos
-                          órgãos, entidades públicas e poderes constituídos,
-                          informações públicas por eles produzidas ou
-                          custodiadas.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>2 - Quando a Lei de Acesso à Informação entrou em
-                          vigor?</h2>
-                        <p>
-                          A Lei de Acesso a informação entrou em vigor em 16 de
-                          maio
-                          de 2012, 180 dias após sua publicação no Diário
-                          Oficial
-                          da
-                          União
-                        </p>
-                      </li>
-                      <li>
-                        <h2>3 - O que são informações?</h2>
-                        <p>
-                          Informações são dados, processados ou não, que podem
-                          ser
-                          utilizados para produção e transmissão de
-                          conhecimento,
-                          registrados em qualquer suporte, linguagem ou formato.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>
-                          4 - A que tipo de informação os cidadãos podem ter
-                          acesso
-                          pela Lei de Acesso?
-                        </h2>
-                        <p>
-                          A partir da vigência da Lei de Acesso à Informação, a
-                          publicidade passou a ser a regra e o sigilo exceção.
-                          Dessa
-                          forma, o acesso a qualquer informação pública
-                          produzida
-                          ou
-                          custodiada pelos órgãos e entidades da administração
-                          pública, torna-se obrigatoriamente aberta para o
-                          cidadão,
-                          exceto algumas exceções, notadamente àquelas cuja
-                          divulgação
-                          indiscriminada por trazer riscos à sociedade ou ao
-                          Estado.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>
-                          5 - É preciso justificar o pedido de acesso à
-                          informação?
-                        </h2>
-                        <p>
-                          Não. De acordo com o art. 10, § 8° da LAI, é proibido
-                          exigir
-                          que o solicitante informe os motivos de sua
-                          solicitação.
-                          Entretanto, o órgão/entidade pode dialogar com o
-                          cidadão
-                          para entender melhor a demanda, de modo a fornecer a
-                          informação mais adequada a sua solicitação.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>6 - O acesso à informação é gratuito?</h2>
-                        <p>
-                          Conforme dispõe o art. 12 da LAI, o serviço de busca e
-                          fornecimento da informação é gratuito. Exceto, em
-                          casos
-                          dos
-                          serviços e dos materiais utilizados para alguma
-                          reprodução
-                          ou envio de cópia de documentos. Neste caso, o órgão
-                          ou
-                          entidade deverá disponibilizar ao solicitante um
-                          Documento
-                          de Arrecadação Municipal (DAM) ou documento
-                          equivalente
-                          para
-                          que ele possa realizar o pagamento.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>7 - O que é o Decreto 7.724/2012?</h2>
-                        <p>
-                          A LAI contém dispositivos de aplicação imediata a
-                          todos
-                          os
-                          órgãos e entidades, bem como, dispositivos que
-                          necessitam
-                          de
-                          regulamentação específica por cada poder e ente da
-                          federação. No âmbito do poder executivo federal, a
-                          regulamentação específica da Lei, ocorreu com a
-                          publicação
-                          do Decreto nº 7.724, de 16 de maio de 2012. E
-                          estabeleceu
-                          os
-                          procedimentos para a garantia do acesso à informação e
-                          para
-                          a classificação de informações sob restrição de acesso
-                          no
-                          Governo Federal.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>
-                          8 - Quais são os prazos para resposta dos pedidos
-                          apresentados com base na da Lei de Acesso à
-                          Informação?
-                        </h2>
-                        <p>
-                          Se a informação estiver disponível, ela deve ser
-                          entregue
-                          imediatamente ao solicitante. Caso contrário, o órgão
-                          ou
-                          entidade tem até 20 (vinte) dias para atender ao
-                          pedido,
-                          a
-                          partir da data de protocolo do pedido, prazo que pode
-                          ser
-                          prorrogado por mais 10 (dez) dias, se houver
-                          justificativa
-                          expressa.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>9 - O que é transparência ativa?</h2>
-                        <p>
-                          É a divulgação de dados por iniciativa do próprio
-                          setor
-                          público, independente de requerimentos ou
-                          solicitações.
-                          Este
-                          processo ocorre geralmente por meio virtual, através
-                          da
-                          publicação de informações divulgadas na internet, em
-                          seções
-                          inseridas em sites dos órgãos e entidades.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>
-                          10 - Que informações os órgãos e entidades do Poder
-                          Executivo federal são obrigados a disponibilizar
-                          proativamente em seus sites?
-                        </h2>
-                        <p>
-                          Informações públicas de interesse coletivo ou geral,
-                          conforme estabelece o art. 8º LAI e o decreto nº
-                          7.724/2012,
-                          que determina como dever dos órgãos e entidades do
-                          Poder
-                          Executivo Federal, Estadual e Municipal, a publicação
-                          detalhada dos seguintes processos:
-                          - Estrutura organizacional e competências dos órgãos,
-                          além
-                          dos endereços e telefones de suas unidades e horários
-                          de
-                          atendimento ao público;
-                          - Programas, projetos, ações, obras e atividades,
-                          indicando
-                          a unidade responsável, principais metas e resultados e
-                          indicadores (se existirem);
-                          - Repasses ou transferências de recursos financeiros;
-                          - Execução orçamentária e financeira detalhada;
-                          - Procedimentos licitatórios, com os contratos
-                          celebrados
-                          e
-                          notas de empenho emitidas;
-                          - Respostas às perguntas mais frequêntes da sociedade;
-                          - Informações sobre o Serviço de Informações ao
-                          Cidadão;
-                        </p>
-                      </li>
-                      <li>
-                        <h2>11 - O que é transparência passiva?</h2>
-                        <p>
-                          É a disponibilização de informações públicas em
-                          atendimento
-                          às demandas específicas de uma pessoa física ou
-                          jurídica.
-                        </p>
-                      </li>
-                      <li>
-                        <h2>12 - O que é o SIC?</h2>
-                        <p>
-                          É o Serviço de Informações ao Cidadão - SIC, que
-                          permite
-                          que
-                          qualquer cidadão, solicite pedidos de acesso à
-                          informação,
-                          acompanhe e receba respostas sobre questionamentos
-                          realizados a órgãos e entidades públicas.
-                          Funções do SIC.
-                          - Atender e orientar os cidadãos sobre pedidos de
-                          informação;
-                          - Informar sobre a tramitação de documentos e
-                          requerimentos
-                          de acesso à informação;
-                          - Receber e registrar os pedidos de acesso e devolver
-                          as
-                          respostas aos solicitantes;
-                        </p>
-                      </li>
-                      <li>
-                        <h2>
-                          13 - Como são contados os prazos para resposta das
-                          Secretarias, de acordo com a LAI?
-                        </h2>
-                        <p>
-                          Os prazos de respostas começam a contar no dia
-                          seguinte
-                          do
-                          registro da solicitação realizada pelo sistema,
-                          segundo
-                          a
-                          Lei do Processo Administrativo – Lei 9.784/99.
-                          Entretanto, existem situações especiais:
-                          - Devido ao horário de funcionamento do SIC, os
-                          pedidos,
-                          recursos e reclamações realizados entre 12h01min e
-                          23h59min
-                          serão considerados como se tivessem sido realizados no
-                          dia
-                          útil seguinte e a contagem só começará a contar a
-                          partir
-                          do
-                          primeiro dia útil posterior ao dia considerado;
-                          - Solicitações cujo prazo inicial comece no final de
-                          semana
-                          ou feriado, terão a contagem iniciada no próximo dia
-                          útil;
-                          - Quando o prazo final para responder a solicitação
-                          coincidir com final de semana ou feriado previsto em
-                          portaria deste município, ele será postergado para o
-                          próximo
-                          dia útil. Por isso, o prazo para envio da resposta
-                          pode
-                          não
-                          ser exatamente 20 dias corridos, conforme estabelece a
-                          LAI.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
-                    Para entrar em contato preciso me registrar?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Não. De acordo com o Decreto nº 7.185/2010 (Art. 2º, §2º,
-                    Inc. III), não pode haver exigências de cadastramento de
-                    usuários ou utilização de senhas para acesso. O acesso deve
-                    ser livre. Todavia, ao se IDENTIFICAR o SIC têm o dever
-                    ético e legal de resguardar o sigilo de seus dados pessoais.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false"
-                    aria-controls="collapseFour">
-                    Quais os Endereços das Secretarias e Órgãos Municipais?
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Os endereços das secretarias e órgãos municipais estão
-                    disponíveis no site oficial da Câmara de Tavares
-                    (www.camaratavares.pb.gov.br). Para ter acesso basta clicar
-                    no menu Secretaria e Órgãos Municipal, localizado do lado
-                    esquerdo da plataforma e escolher a opção requerida e
-                    verificar seus respectivos endereços.
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive" aria-expanded="false"
-                    aria-controls="collapseFive">
-                    Quem pode falar com o SIC da Prefeitura?
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Qualquer cidadão, brasileiro ou não, pode apresentar
-                    sugestões, reclamações, solicitações ou elogios, sobre
-                    assuntos relacionados aos serviços prestados pela Prefeitura
-                    Municipal, bem como, atos de irregularidades, se for o caso.
-                    Tem alguma dúvida, sugestão, reclamação ou denúncias? Entre
-                    em contato.
-
-                    Para casos de erro ou dificuldade no acesso do site, envie
-                    um e-mail para contato@camaratavares.pb.gov.br ou preencha o
-                    formulário de contato online, comunicando o problema.
-                    Agradecemos sua colaboração!
-                  </div>
-                </div>
-              </div>
-
+      <footer class="bg-dark text-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-5 mb-md-0 text-center">
+              <h4>CNPJ.: 08.560.799/0001-82</h4>
+              <p class="mb-0">Horário de Atendimento</p>
+              <p>Segunda à Sexta: De 07:00 às 13:00</p>
             </div>
-
-          </section>
-
-
-
-
-
-
-
-          <footer class="bg-dark text-light py-5">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4 mb-5 mb-md-0 text-center">
-                  <h4>CNPJ.: 08.560.799/0001-82</h4>
-                  <p class="mb-0">Horário de Atendimento</p>
-                  <p>Segunda à Sexta: De 07:00 às 13:00</p>
-                </div>
-                <div class="col-md-4 mb-5 mb-md-0 text-center">
-                  <h4>Endereço Físico</h4>
-                  <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
-                  <p>Tavares / PB - CEP: 58753-000</p>
-                </div>
-                <div class="col-md-4 text-center">
-                  <h4>Telefones Úteis</h4>
-                  <a href="tel: (83) 3450-1023">
-                    <p>(83) 3450-1023</p>
-                  </a>
-                  <a href="tel:(83) 99929-4045">
-                    <p>(83) 99929-4045</p>
-                  </a>
-                </div>
-              </div>
-              <hr class="my-5" />
-              <p class="mt-5 text-center">
-                © 2023 Câmara Municipal de Tavares. Todos os direitos
-                reservados.
-              </p>
+            <div class="col-md-4 mb-5 mb-md-0 text-center">
+              <h4>Endereço Físico</h4>
+              <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
+              <p>Tavares / PB - CEP: 58753-000</p>
             </div>
-          </footer>
+            <div class="col-md-4 text-center">
+              <h4>Telefones Úteis</h4>
+              <a href="tel: (83) 3450-1023">
+                <p>(83) 3450-1023</p>
+              </a>
+              <a href="tel:(83) 99929-4045">
+                <p>(83) 99929-4045</p>
+              </a>
+            </div>
+          </div>
+          <hr class="my-5" />
+          <p class="mt-5 text-center">
+            © 2023 Câmara Municipal de Tavares. Todos os direitos
+            reservados.
+          </p>
+        </div>
+      </footer>
 
-          <!-- Script animation -->
-          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-          <script>
+      <!-- Script animation -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
       AOS.init();
     </script>
-          <!-- Bootstrap Js -->
-          <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-            crossorigin="anonymous"></script>
+      <!-- Bootstrap Js -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
-          <script src="../script.js"></script>
-        </body>
-      </html>
+      <script src="../script.js"></script>
+    </body>
+  </html>

@@ -8,8 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-      />
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="shortcut icon" href="../img/favicon.png" type="favicon" />
@@ -27,312 +26,350 @@
           viewBox="0 0 16 16">
           <path
             d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0
-            .496-.868L8 8.71V3.5z"
-            />
-            <path
-              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1
-              14 0z"
-              />
-            </svg>
-            <span id="today"></span>
-          </div>
-          <div></div>
-        </section>
+            .496-.868L8 8.71V3.5z" />
+          <path
+            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1
+              14 0z" />
+        </svg>
+        <span id="today"></span>
+      </div>
+      <div></div>
+    </section>
 
-        <header class="sticky-top">
-          <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-            <div
-              class="container d-flex justify-content-around
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div
+          class="container d-flex justify-content-around
               align-content-around">
-              <a href="../index.html"><img
-                  src="../img/logo-full-removebg-preview.png" alt="" srcset=""
-                  /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+          <a href="../index.html"><img
+              src="../img/logo-full-removebg-preview.png" alt srcset /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-              <div
-                class="collapse navbar-collapse justify-content-center"
-                id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex mb- mb-lg-0">
-                  <li class="nav-item mb-0">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex mb- mb-lg-0">
+              <li class="nav-item mb-0">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0"
+                  active
+                  pb-0
+                  aria-current="page"
+                  href="../index.html">Início</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">A Câmara</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
                     <a
-                      id="nav-link"
-                      class="nav-link active pb-0"
-                      active
-                      pb-0
-                      aria-current="page"
-                      href="../index.html">Início</a>
+                      class="dropdown-item"
+                      target="_blank"
+                      href="../docs/regimentoInterno.pdf">Regimento
+                      Interno</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false">A Câmara</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="../docs/regimentoInterno.pdf">Regimento
-                          Interno</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="vereadores.html">Vereadores</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="consulta.html"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-toggle="dropdown">Consulta</a>
-                    <ul
-                      class="dropdown-menu hover"
-                      aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="consulta.html">Agenda da
-                          Câmara</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item"
-                          href="../pages/consulta.html#documentos">Documentos</a>
-                      </li>
-
-                      <li>
-                        <a
-                          target="_blank"
-                          class="dropdown-item"
-                          href="../docs/PCA.pdf">PCA
-                          - Prestação de Contas Anuais</a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="../img/lei de acesso a informacao.pdf">Lei de
-                          Acesso a Informação</a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          class="dropdown-item"
-                          href="../docs/lei-organica.pdf">Lei
-                          Orgânica</a>
-                      </li>
-
-
-
-
-                      <li>
-                        <a class="dropdown-item" href="#vereadores">SIC</a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="https://tavares.pb.gov.br/assuntos/portal-da-transparencia">Transparência
-                          Fiscal</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-toggle="dropdown">
-                      Informativos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="diario.html">Diário
-                          Oficial</a>
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="informativos.html#news">Notícias</a>
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="#faq">Perguntas
-                          Frequentes</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      id="nav-link"
-                      class="nav-link active me-3 pb-0"
-                      href="contato.html">Fale Conosco</a>
+                  <li>
+                    <a class="dropdown-item" href="vereadores.html">Vereadores</a>
                   </li>
                 </ul>
-              </div>
+              </li>
 
-              <div class="climate">
-                <span id="climate"></span>
-              </div>
-            </div>
-          </nav>
-        </header>
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="consulta.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-toggle="dropdown">Consulta</a>
+                <ul
+                  class="dropdown-menu hover"
+                  aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="consulta.html">Agenda da
+                      Câmara</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item"
+                      href="../pages/consulta.html#documentos">Documentos</a>
+                  </li>
 
-        <section id="news" class="newsToday">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="../img/diario1.jpeg" alt="Imagem da notícia"
-                  class="img-fluid w-100 p-4">
-              </div>
-              <div class="col-md-6">
-                <h2 class="news-title-Today">Ata de sessão Ordinária da Câmara
-                  Municipal de vereadores de Tavares-PB</h2>
-                <p class="news-info-Today">Em 26 de abril às 10:15min no
-                  plenário
-                  desta casa de lei reuniram-se os seguintes vereadores:</p>
-                <ul class="news-list">
-                  <li class="news-list-item">Edson Leite de Lima</li>
-                  <li class="news-list-item">Marcelo Bezerra de Sousa</li>
-                  <li class="news-list-item">Jose Wilson Lopes</li>
-                  <li class="news-list-item">Jorge Leite de Sousa</li>
-                  <li class="news-list-item">Lenira Almeida Marinho</li>
-                  <li class="news-list-item">Vitória Marques de Sousa</li>
-                  <li class="news-list-item">Adão Luiz de Almeida</li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="dropdown-item"
+                      href="../docs/PCA.pdf">PCA
+                      - Prestação de Contas Anuais</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="../img/lei de acesso a informacao.pdf">Lei de
+                      Acesso a Informação</a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="dropdown-item"
+                      href="../docs/lei-organica.pdf">Lei
+                      Orgânica</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#vereadores">SIC</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://tavares.pb.gov.br/assuntos/portal-da-transparencia">Transparência
+                      Fiscal</a>
+                  </li>
                 </ul>
-                <p class="news-content">Câmara Municipal de Tavares-PB realiza
-                  sessão ordinária para discutir projetos e indicações. Na
-                  sessão, que aconteceu em 26 de abril no plenário da casa de
-                  lei, estiveram presentes os vereadores acima citados, todos
-                  presididos por José Edson Cordeiro. Foi apresentado dois
-                  projetos do poder executivo, n° 007/2023 e n° 008/2023, que
-                  serão votados pelas comissões. Também foi aprovada por
-                  unanimidade a indicação n° 002/2023, que concede auxílio
-                  financeiro ao grupo cultural Junina Sacode, e o requerimento
-                  n° 007/2023, que pede a capacitação em primeiros socorros para
-                  professores e funcionários de escolas públicas. Além disso,
-                  foram escolhidos os membros das comissões de legislação,
-                  finanças e orçamento, obras e serviços públicos,
-                  agroindústrias, comércio e turismo, e educação, saúde e
-                  assistência social.</p>
-                <p class="news-date"><em>26 de abril 2023 às 10:35min.</em></p>
-                <a href="../docs/Atas/2023/Ata de sessão Ordinária 26.04.pdf"
-                  class="news-read-more">Leia
-                  na íntegra</a>
-              </div>
-            </div>
-          </div>
-        </section>
+              </li>
 
-        <section id="news2" class="newsToday">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="../img/diario2.jpeg" alt="Imagem da notícia"
-                  class="img-fluid w-100 p-4">
-              </div>
-              <div class="col-md-6">
-                <h2 class="news-title-Today">Ata da sessão extraordinária da
-                  Câmara
-                  Municipal de vereadores de Tavares-PB</h2>
-                <p class="news-info-Today">Em 04 de maio às 16:27min no plenário
-                  desta casa de lei reuniram-se os seguintes vereadores:</p>
-                <ul class="news-list">
-                  <li class="news-list-item">Edson Leite de Lima</li>
-                  <li class="news-list-item">Jose Wilson Lopes</li>
-                  <li class="news-list-item">Jorge Leite de Souza</li>
-                  <li class="news-list-item">Lerina Almeida Marinho</li>
-                  <li class="news-list-item">João Batista dos Santos</li>
-                  <li class="news-list-item">Adão Luiz de Almeida</li>
-                </ul>
-                <p class="news-content">Câmara Municipal de Tavares-PB realiza
-                  sessão extraordinária para tratar de assuntos urgentes. Na
-                  sessão, que aconteceu em 04 de maio no plenário da casa de
-                  lei, estiveram presentes os vereadores acima citados, todos
-                  presididos por José Edson Cordeiro. Após a verificação do
-                  quórum legal, o presidente saudou a todos e declarou aberta a
-                  sessão. Em seguida, foram apresentados aos vereadores os
-                  pareceres das comissões e foi dispensada a leitura. Logo
-                  depois, foi colocado para votação os projetos do poder
-                  executivo, n° 007/2023 e n° 005/2023, que foram aprovados por
-                  unanimidade. O presidente facultou a palavra, e não havendo
-                  mais nada a ser tratado, o presidente convidou todos os
-                  presentes para a próxima reunião do dia 10/05/2023 e entregará
-                  a convocatória para os ausentes. O presidente declarou
-                  encerrada a sessão e solicitou que fosse lavrada a presente
-                  ata, que foi assinada por Maria Alice Silva de Sousa,
-                  Secretária Legislativa, e por todos que aprovaram. Poço da
-                  Câmara Municipal de Tavares-PB, em 04 de maio de 2023 às
-                  16h35min.</p>
-                <p class="news-date"><em>04 de maio de 2023 às 16:35min.</em></p>
-                <a href="../docs/Atas/2023/Ata de sessão Ordinaria 10.5.pdf"
-                  class="news-read-more">Leia
-                  na íntegra</a>
-
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <footer class="bg-dark text-light py-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 mb-5 mb-md-0 text-center">
-                <h4>CNPJ.: 08.560.799/0001-82</h4>
-                <p class="mb-0">Horário de Atendimento</p>
-                <p>Segunda à Sexta: De 07:00 às 13:00</p>
-              </div>
-              <div class="col-md-4 mb-5 mb-md-0 text-center">
-                <h4>Endereço Físico</h4>
-                <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
-                <p>Tavares / PB - CEP: 58753-000</p>
-              </div>
-              <div class="col-md-4 text-center">
-                <h4>Telefones Úteis</h4>
-                <a href="tel: (83) 3450-1023">
-                  <p>(83) 3450-1023</p>
+              <li class="nav-item dropdown">
+                <a
+                  id="nav-link"
+                  class="nav-link active pb-0 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-toggle="dropdown">
+                  Informativos
                 </a>
-                <a href="tel:(83) 99929-4045">
-                  <p>(83) 99929-4045</p>
-                </a>
-              </div>
-            </div>
-            <hr class="my-5" />
-            <p class="mt-5 text-center">
-              © 2023 Câmara Municipal de Tavares. Todos os direitos
-              reservados.
-            </p>
-          </div>
-        </footer>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="diario.html">Diário
+                      Oficial</a>
+                  </li>
 
-        <!-- Script animation -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
+                  <li>
+                    <a class="dropdown-item" href="informativos.html#news">Notícias</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#faq">Perguntas
+                      Frequentes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  id="nav-link"
+                  class="nav-link active me-3 pb-0"
+                  href="contato.html">Fale Conosco</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="climate">
+            <span id="climate"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="news" class="newsToday">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../img/diario1.jpeg" alt="Imagem da notícia"
+              class="img-fluid w-100 p-4">
+          </div>
+          <div class="col-md-6">
+            <h2 class="news-title-Today">Ata de sessão Ordinária da Câmara
+              Municipal de vereadores de Tavares-PB</h2>
+            <p class="news-info-Today">Em 26 de abril às 10:15min no
+              plenário
+              desta casa de lei reuniram-se os seguintes vereadores:</p>
+            <ul class="news-list">
+              <li class="news-list-item">Edson Leite de Lima</li>
+              <li class="news-list-item">Marcelo Bezerra de Sousa</li>
+              <li class="news-list-item">Jose Wilson Lopes</li>
+              <li class="news-list-item">Jorge Leite de Sousa</li>
+              <li class="news-list-item">Lenira Almeida Marinho</li>
+              <li class="news-list-item">Vitória Marques de Sousa</li>
+              <li class="news-list-item">Adão Luiz de Almeida</li>
+            </ul>
+            <p class="news-content">Câmara Municipal de Tavares-PB realiza
+              sessão ordinária para discutir projetos e indicações. Na
+              sessão, que aconteceu em 26 de abril no plenário da casa de
+              lei, estiveram presentes os vereadores acima citados, todos
+              presididos por José Edson Cordeiro. Foi apresentado dois
+              projetos do poder executivo, n° 007/2023 e n° 008/2023, que
+              serão votados pelas comissões. Também foi aprovada por
+              unanimidade a indicação n° 002/2023, que concede auxílio
+              financeiro ao grupo cultural Junina Sacode, e o requerimento
+              n° 007/2023, que pede a capacitação em primeiros socorros para
+              professores e funcionários de escolas públicas. Além disso,
+              foram escolhidos os membros das comissões de legislação,
+              finanças e orçamento, obras e serviços públicos,
+              agroindústrias, comércio e turismo, e educação, saúde e
+              assistência social.</p>
+            <p class="news-date"><em>26 de abril 2023 às 10:35min.</em></p>
+            <a href="../docs/Atas/2023/Ata de sessão Ordinária 26.04.pdf"
+              class="news-read-more">Leia
+              na íntegra</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news2" class="newsToday">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../img/diario2.jpeg" alt="Imagem da notícia"
+              class="img-fluid w-100 p-4">
+          </div>
+          <div class="col-md-6">
+            <h2 class="news-title-Today">Ata da sessão extraordinária da
+              Câmara
+              Municipal de vereadores de Tavares-PB</h2>
+            <p class="news-info-Today">Em 04 de maio às 16:27min no plenário
+              desta casa de lei reuniram-se os seguintes vereadores:</p>
+            <ul class="news-list">
+              <li class="news-list-item">Edson Leite de Lima</li>
+              <li class="news-list-item">Jose Wilson Lopes</li>
+              <li class="news-list-item">Jorge Leite de Souza</li>
+              <li class="news-list-item">Lerina Almeida Marinho</li>
+              <li class="news-list-item">João Batista dos Santos</li>
+              <li class="news-list-item">Adão Luiz de Almeida</li>
+            </ul>
+            <p class="news-content">Câmara Municipal de Tavares-PB realiza
+              sessão extraordinária para tratar de assuntos urgentes. Na
+              sessão, que aconteceu em 04 de maio no plenário da casa de
+              lei, estiveram presentes os vereadores acima citados, todos
+              presididos por José Edson Cordeiro. Após a verificação do
+              quórum legal, o presidente saudou a todos e declarou aberta a
+              sessão. Em seguida, foram apresentados aos vereadores os
+              pareceres das comissões e foi dispensada a leitura. Logo
+              depois, foi colocado para votação os projetos do poder
+              executivo, n° 007/2023 e n° 005/2023, que foram aprovados por
+              unanimidade. O presidente facultou a palavra, e não havendo
+              mais nada a ser tratado, o presidente convidou todos os
+              presentes para a próxima reunião do dia 10/05/2023 e entregará
+              a convocatória para os ausentes. O presidente declarou
+              encerrada a sessão e solicitou que fosse lavrada a presente
+              ata, que foi assinada por Maria Alice Silva de Sousa,
+              Secretária Legislativa, e por todos que aprovaram. Poço da
+              Câmara Municipal de Tavares-PB, em 04 de maio de 2023 às
+              16h35min.</p>
+            <p class="news-date"><em>04 de maio de 2023 às 16:35min.</em></p>
+            <a href="../docs/Atas/2023/Ata de sessão Ordinaria 10.5.pdf"
+              class="news-read-more">Leia
+              na íntegra</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news2" class="newsToday">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../img/diario3.jpeg" alt="Imagem da notícia"
+              class="img-fluid w-100 p-4">
+          </div>
+          <div class="col-md-6">
+            <h2 class="news-title-Today">Ata de sessão Ordinária da Câmara
+              Municipal de vereadores de Tavares-PB</h2>
+            <p class="news-info-Today">Em 10 de maio às 10:17min no plenário
+              desta casa de lei reuniram-se os seguintes vereadores:</p>
+            <ul class="news-list">
+              <li class="news-list-item">Edson Leite de Lima</li>
+              <li class="news-list-item">João Batista dos Santos</li>
+              <li class="news-list-item">Jose Wilson Lopes</li>
+              <li class="news-list-item">Jorge Leite de Sousa</li>
+              <li class="news-list-item">Lenira Almeida Marinho</li>
+              <li class="news-list-item">Vitória Marques de Sousa</li>
+              <li class="news-list-item">Adão Luiz de Almeida</li>
+              <li class="news-list-item">Marcelo Bezerra de Sousa</li>
+            </ul>
+            <p class="news-content">Câmara Municipal de Tavares-PB realiza
+              sessão ordinária para discutir projetos e indicações. Na sessão,
+              que aconteceu em 10 de maio no plenário da casa de lei, estiveram
+              presentes os vereadores acima citados, todos presididos por José
+              Edson Cordeiro. Foi realizada a verificação do quórum legal,
+              seguida pela leitura e aprovação por unanimidade da ata da sessão
+              anterior. Em seguida, foram discutidos e aprovados por unanimidade
+              os projetos de decreto legislativo n° 001/2023 e n° 002/2023.
+              Também foi aprovado por unanimidade o requerimento n° 008/2023, de
+              autoria do vereador Jose Wilson Lopes, que solicita a limpeza das
+              paredes dos açudes, cachoeira lisa e cacimbinha. Ao encerrar a
+              sessão, o presidente convidou todos os presentes para a próxima
+              reunião agendada para o dia 17.05.2023. Além disso, os membros e
+              relatores das comissões foram convocados para se reunirem e
+              votarem o projeto n° 006/2023 do poder executivo.</p>
+            <p class="news-date"><em>10 de maio de 2023 às 10:30min.</em></p>
+            <a href="../docs/Atas/2023/029.pdf"
+              class="news-read-more">Leia na íntegra</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-md-0 text-center">
+            <h4>CNPJ.: 08.560.799/0001-82</h4>
+            <p class="mb-0">Horário de Atendimento</p>
+            <p>Segunda à Sexta: De 07:00 às 13:00</p>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0 text-center">
+            <h4>Endereço Físico</h4>
+            <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
+            <p>Tavares / PB - CEP: 58753-000</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h4>Telefones Úteis</h4>
+            <a href="tel: (83) 3450-1023">
+              <p>(83) 3450-1023</p>
+            </a>
+            <a href="tel:(83) 99929-4045">
+              <p>(83) 99929-4045</p>
+            </a>
+          </div>
+        </div>
+        <hr class="my-5" />
+        <p class="mt-5 text-center">
+          © 2023 Câmara Municipal de Tavares. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
       AOS.init();
     </script>
-        <!-- Bootstrap Js -->
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-          crossorigin="anonymous"></script>
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
 
-        <script src="../script.js"></script>
-      </body>
-    </html>
+    <script src="../script.js"></script>
+  </body>
+</html>
