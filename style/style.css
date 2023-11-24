@@ -1084,6 +1084,7 @@ section .container .row .col-md-9 .badge i {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 30px;
+  text-align: justify;
 }
 #news .news-date {
   font-size: 1rem;
