@@ -11,7 +11,7 @@ const horaFormatada = hoje.toLocaleString("pt-BR", {
   minute: "numeric",
 });
 const diaDeHoje = `${dataFormatada}, ${horaFormatada}`;
-console.log(diaDeHoje); // Exemplo de saída: "Quarta-feira, 23 de março de 2023, 14:30"
+console.log(diaDeHoje); 
 
 let today = document.getElementById("today");
 today.innerHTML = diaDeHoje;
@@ -81,13 +81,11 @@ input.addEventListener("input", () => {
   charCount.textContent = input.value.length;
 });
 
-// Seleciona o elemento "nav" pelo ID
+
 var nav = document.getElementById("header");
 
-// Obtém a posição do elemento "nav" em relação ao topo da página
 var sticky = nav.offsetTop;
 
-// Adiciona um evento de rolagem à janela
 window.addEventListener("scroll", function () {
   // Verifica se a posição atual da página é maior ou igual à posição do elemento "nav"
   if (window.pageYOffset >= sticky) {
