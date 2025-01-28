@@ -6,57 +6,70 @@ img {
   vertical-align: middle;
 }
 
-.carousel {
-  margin-bottom: 20px;
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
 
-  .carousel-inner {
-    height: 300px; // altura padrão do carrossel
+  .carousel {
+    margin: auto;
 
-    @media screen and (max-width: 768px) {
-      height: 200px; // altura para telas menores que 768px
+    .carousel-inner {
+      width: 100%;
+      height: 400px; // Altura padrão do carrossel
+      border-radius: 10px; // Borda arredondada para suavizar
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Sombra para destaque
+
+      .carousel-item {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; // Ajusta a imagem ao tamanho do carrossel
+        }
+      }
     }
 
-    @media screen and (max-width: 576px) {
-      height: 150px; // altura para telas menores que 576px
-    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%; // Ajuste para reduzir a largura dos botões
 
-    .carousel-item {
-      height: 100%; // altura dos itens do carrossel
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.5); // Fundo dos ícones
+        border-radius: 50%; // Ícones redondos
+        width: 40px;
+        height: 40px;
+        transition: background-color 0.3s ease; // Animação suave
 
-      img {
-        height: 100%; // ajusta a altura da imagem para preencher o item
-        object-fit: cover; // mantém proporções da imagem
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8); // Destaque ao passar o mouse
+        }
       }
     }
   }
 
-  .carousel-control-prev,
-  .carousel-control-next {
-    height: 100%; // altura dos botões
-    width: 5%; // largura dos botões
+  // Responsividade para diferentes telas
+  @media (max-width: 768px) {
+    .carousel-inner {
+      height: 300px; // Ajuste para telas médias
+    }
+  }
 
-    @media screen and (max-width: 576px) {
-      width: 10%; // largura dos botões para telas menores que 576px
+  @media (max-width: 576px) {
+    .carousel-inner {
+      height: 200px; // Ajuste para telas pequenas
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      height: 100%; // altura dos ícones dos botões
-      width: 100%; // largura dos ícones dos botões
-      background-color: rgba(0, 0, 0, 0.5); // cor de fundo dos ícones
-      border-radius: 0; // remove bordas arredondadas dos ícones
-    }
-
-    &:hover {
-      background-color: rgba(
-        0,
-        0,
-        0,
-        0.2
-      ); // cor de fundo dos botões ao passar o mouse
+      width: 30px;
+      height: 30px; // Ícones menores em telas pequenas
     }
   }
 }
+
 
 .news-container {
   display: flex;
