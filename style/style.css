@@ -553,6 +553,10 @@ img {
   }
 }
 
+#shadow-host-companion {
+  display: none !important;
+}
+
 section {
   background-color: #f7f7f7;
   padding: 50px 10px;
