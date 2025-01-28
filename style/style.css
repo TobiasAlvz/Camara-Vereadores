@@ -31,7 +31,7 @@ a {
 #top-head a {
   position: relative;
   display: inline-block;
-  color: #007bff;
+  color: #0264cf;
   text-decoration: none;
 }
 #top-head .bi {
@@ -44,7 +44,7 @@ a {
   color: #fff;
 }
 #top-head #climate {
-  color: #007bff;
+  color: #0264cf;
 }
 
 #nav-link {
@@ -71,7 +71,7 @@ a {
   border: 1px solid #0056b3;
 }
 .dropdown-menu .dropdown-item {
-  color: #007bff;
+  color: #0264cf;
   padding: 10px 20px;
   transition: background-color 0.4s ease-in-out;
 }
@@ -89,14 +89,12 @@ footer {
   color: #fff;
   padding: 50px 0;
   text-align: center;
-  background-color: #343a40;
 }
 footer .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
 }
 footer h4 {
   font-size: 1.5rem;
@@ -105,29 +103,23 @@ footer h4 {
 footer p {
   font-size: 1rem;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.5;
 }
 footer a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
-footer a:hover, footer a:focus {
+footer a:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
 }
 footer .col-md-4 {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 footer .col-md-4:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 footer hr {
   border-color: rgba(255, 255, 255, 0.3);
-  margin: 20px auto;
-  width: 80%;
 }
 footer p.text-center {
   margin-top: 30px;
@@ -137,15 +129,6 @@ footer p.text-center {
 }
 footer p.text-center:hover {
   color: rgba(255, 255, 255, 0.8);
-}
-@media (max-width: 576px) {
-  footer .row {
-    flex-direction: column;
-    text-align: center;
-  }
-  footer .col-md-4 {
-    margin-bottom: 20px;
-  }
 }
 
 img {
@@ -223,7 +206,7 @@ img {
 .news-container .card .text-title {
   font-size: 30px;
   font-weight: 700;
-  color: #007bff;
+  color: #0264cf;
   margin-bottom: 10px;
 }
 .news-container .card .text-body {
@@ -233,7 +216,7 @@ img {
 }
 .news-container .card a .card-button {
   width: 100%;
-  background-color: #007bff;
+  background-color: #0264cf;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -242,7 +225,7 @@ img {
   transition: background-color 0.3s;
 }
 .news-container .card a .card-button:hover {
-  background-color: #0062cc;
+  background-color: #024c9c;
 }
 .news-container .news-item {
   background-color: #f0f0f0;
@@ -267,7 +250,7 @@ img {
 .news-container .news-item .news-title {
   font-size: 22px;
   font-weight: 700;
-  color: #007bff;
+  color: #0264cf;
   margin-bottom: 10px;
 }
 .news-container .news-item .news-date {
@@ -440,11 +423,11 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #007bff;
+  background-color: #0264cf;
 }
 .pluss .card {
-  width: 300px;
-  height: 200px;
+  width: 210px;
+  height: 254px;
   border-radius: 4px;
   background: white;
   display: flex;
@@ -783,13 +766,13 @@ section .container .row .col-md-9 .badge i {
 #documentos .container .card .card-body .list-group-item .badge {
   text-align: center;
   font-size: 14px;
-  background-color: #007bff;
+  background-color: #0264cf;
 }
 #documentos .container .card .card-body .list-group-item button {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #007bff;
+  background-color: #0264cf;
   border-radius: 15%;
   border: none;
   transition: background-color 0.3s;
@@ -811,7 +794,7 @@ section .container .row .col-md-9 .badge i {
   border-bottom: none;
 }
 #documentos .container .card .card-body .list-group-item ul li a {
-  color: #007bff;
+  color: #0264cf;
   transition: color 0.3s;
 }
 
@@ -1016,7 +999,7 @@ section .container .row .col-md-9 .badge i {
 .contact form div input:invalid,
 .contact form div textarea:invalid,
 .contact form div select:invalid {
-  border-color: #007bff;
+  border-color: #0264cf;
 }
 .contact form div textarea {
   resize: vertical;
@@ -1124,7 +1107,7 @@ section .container .row .col-md-9 .badge i {
   transition: background-color 0.3s ease-in-out;
 }
 .news-read-more:hover {
-  background-color: #007bff;
+  background-color: #0264cf;
   color: #fff;
 }
 
