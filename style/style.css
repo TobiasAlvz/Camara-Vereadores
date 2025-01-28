@@ -280,25 +280,25 @@ img {
   }
 }
 
-.veriadores {
+.vereadores {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.veriadores h2 {
+.vereadores h2 {
   font-size: 32px;
   font-weight: bold;
   text-align: left;
   margin-bottom: 30px;
 }
-.veriadores .col-md-3 {
+.vereadores .col-md-3 {
   margin: 5px;
   padding: 0;
   height: auto;
   width: 25%;
 }
-.veriadores .col-md-3 .card {
+.vereadores .col-md-3 .card {
   cursor: pointer;
   border: 1px solid #3a3a3a;
   border-radius: 10px;
@@ -306,38 +306,38 @@ img {
   position: relative;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.veriadores .col-md-3 .card .card-title {
+.vereadores .col-md-3 .card .card-title {
   font-size: 14px;
   margin: 0;
   text-align: center;
 }
-.veriadores .col-md-3 .card img {
+.vereadores .col-md-3 .card img {
   padding: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-.veriadores .col-md-3 .card .card-body {
+.vereadores .col-md-3 .card .card-body {
   padding: 10px;
 }
-.veriadores .col-md-3 .card .card-body .card-title {
+.vereadores .col-md-3 .card .card-body .card-title {
   font-size: 18px;
   margin: 0;
 }
-.veriadores .col-md-3 .card:hover img {
+.vereadores .col-md-3 .card:hover img {
   transform: scale(1.1);
 }
-.veriadores .col-md-3 .card:hover:after {
+.vereadores .col-md-3 .card:hover:after {
   opacity: 1;
 }
-.veriadores .col-md-3 .card:hover .card-body {
+.vereadores .col-md-3 .card:hover .card-body {
   transform: translateY(-50%);
 }
-.veriadores .col-md-3 .card:hover .card-title {
+.vereadores .col-md-3 .card:hover .card-title {
   color: #007bff;
 }
-.veriadores .col-md-3 .card:after {
+.vereadores .col-md-3 .card:after {
   content: "";
   position: absolute;
   top: 0;
@@ -349,13 +349,13 @@ img {
   transition: opacity 0.3s ease;
 }
 @media (max-width: 768px) {
-  .veriadores .col-md-3 {
+  .vereadores .col-md-3 {
     height: 250px;
     width: 110px;
   }
 }
 @media (max-width: 480px) {
-  .veriadores .col-md-3 {
+  .vereadores .col-md-3 {
     height: 250px;
     width: 110px;
   }
@@ -648,6 +648,7 @@ section .container .row .col-md-9 .badge i {
   color: #333;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   margin-bottom: 3rem;
+  text-align: center;
 }
 .dates .table-responsive {
   overflow-x: auto;
