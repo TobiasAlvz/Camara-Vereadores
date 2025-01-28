@@ -1,55 +1,53 @@
 footer {
+  width: 100%;
+  background-color: #212529;
   color: #fff;
   padding: 50px 0;
   text-align: center;
+  margin: 0;
+  padding: 50px 0;
+}
+footer h4 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-  }
+footer p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
 
-  h4 {
-    font-size: 1.5rem;
-    margin-top: 0;
-  }
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-  p {
-    font-size: 1rem;
-    margin-bottom: 0;
-  }
+footer a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
 
-  a {
-    color: #fff;
-    text-decoration: none;
+footer .col-md-4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    &:hover {
-      color: rgba(255, 255, 255, 0.8);
-      text-decoration: underline;
-    }
-  }
+footer .col-md-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-  .col-md-4 {
-    transition: transform 0.3s ease;
+footer hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px auto;
+  width: 80%;
+}
 
-    &:hover {
-      transform: translateY(-5px);
-    }
-  }
+footer .text-center p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
 
-  hr {
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  p.text-center {
-    margin-top: 30px;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: rgba(255, 255, 255, 0.8);
-    }
-  }
+footer .text-center p:hover {
+  color: rgba(255, 255, 255, 0.9);
 }
