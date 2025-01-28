@@ -2,12 +2,14 @@ footer {
   color: #fff;
   padding: 50px 0;
   text-align: center;
+  background-color: #343a40; // Adicione um fundo para contraste, se necessário
 
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    gap: 20px; // Melhor espaçamento entre colunas
   }
 
   h4 {
@@ -18,28 +20,35 @@ footer {
   p {
     font-size: 1rem;
     margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.8); // Melhor contraste
+    line-height: 1.5; // Melhor legibilidade
   }
 
   a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: rgba(255, 255, 255, 0.8);
       text-decoration: underline;
     }
   }
 
   .col-md-4 {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Adiciona uma sombra para destaque
     }
   }
 
   hr {
     border-color: rgba(255, 255, 255, 0.3);
+    margin: 20px auto;
+    width: 80%; // Ajusta a largura para estética
   }
 
   p.text-center {
@@ -50,6 +59,17 @@ footer {
 
     &:hover {
       color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .row {
+      flex-direction: column; // Garante alinhamento vertical em telas menores
+      text-align: center;
+    }
+
+    .col-md-4 {
+      margin-bottom: 20px; // Adiciona espaço entre blocos
     }
   }
 }
