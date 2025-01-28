@@ -1,4 +1,4 @@
-// Cabeçalho
+// Cabeçalho principal
 #top-head {
   width: 100%;
   display: flex;
@@ -7,7 +7,7 @@
   padding: 10px 20px;
   background-color: #004a9f;
   z-index: 1000;
-  height: 50px;
+  height: 60px;
 
   .today,
   .climate {
@@ -18,7 +18,7 @@
     font-weight: bold;
 
     svg {
-      margin-right: 5px;
+      margin-right: 8px;
     }
   }
 
@@ -37,27 +37,48 @@
   }
 }
 
-// Menu de navegação
+// Navbar
 .navbar {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   background-color: #ffffff;
   border-bottom: 1px solid #cccccc;
 
-  .navbar-brand img {
-    max-height: 40px;
-    height: auto;
-    width: auto;
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-height: 80px;
+      height: auto;
+      width: auto;
+    }
   }
 
   .navbar-toggler {
     border: none;
+    outline: none;
 
     .navbar-toggler-icon {
-      background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%230064cf" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z"%3E%3C/path%3E%3C/svg%3E');
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230064cf' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z'%3E%3C/path%3E%3C/svg%3E");
     }
   }
 
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 10;
+  }
+
   .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
     .nav-item {
       position: relative;
 
@@ -66,6 +87,7 @@
         font-size: 16px;
         padding: 0.5rem 1rem;
         text-transform: uppercase;
+        font-weight: bold;
         transition: color 0.3s ease, background-color 0.3s ease;
 
         &:hover,
@@ -76,7 +98,7 @@
         }
       }
 
-      // Dropdown Efeito Hover
+      // Dropdown em Desktop
       &:hover .dropdown-menu {
         display: block;
         opacity: 1;
@@ -90,14 +112,17 @@
 // Dropdown Menu
 .dropdown-menu {
   display: none;
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
+  top: 100%;
+  left: 0;
   background-color: #ffffff;
   border: 1px solid #cccccc;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-  transform: translateY(-10px);
-  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 
   .dropdown-item {
     color: #004a9f;
@@ -112,7 +137,8 @@
   }
 }
 
-// Versão Mobile
+
+// Responsividade - Mobile
 @media (max-width: 768px) {
   .navbar-collapse {
     position: absolute;
@@ -123,34 +149,59 @@
     border-top: 1px solid #cccccc;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    transition: max-height 0.3s ease;
-    overflow: hidden;
-    max-height: 0; // Menu fechado
+    visibility: hidden; // Escondido por padrão
+    opacity: 0;         // Invisível por padrão
+    transition: visibility 0.3s ease, opacity 0.3s ease;
   }
-
+  
   .navbar-collapse.show {
-    max-height: 300px; // Menu aberto
+    visibility: visible; // Mostra o menu
+    opacity: 1;         // Torna visível
   }
-
-  .nav-link {
-    width: 100%;
-    text-align: left;
-    padding: 10px 20px;
-    border-bottom: 1px solid #eeeeee;
-
-    &:hover {
-      background-color: #004a9f;
-      color: #ffffff;
+  
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  
+    .nav-link {
+      width: 100%;
+      text-align: left;
+      padding: 10px 20px;
+      border-bottom: 1px solid #eeeeee;
+  
+      &:hover {
+        background-color: #004a9f;
+        color: #ffffff;
+      }
     }
   }
-
+  
   .dropdown-menu {
+    visibility: hidden; // Escondido por padrão
+    opacity: 0;
     position: static;
-    box-shadow: none;
     margin: 0;
-    transform: none;
-    visibility: visible;
-    opacity: 1;
-    display: block; // Dropdown sempre visível no mobile
+    box-shadow: none;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+  
+    .dropdown-item {
+      padding: 10px 20px;
+    }
   }
+  
+  .dropdown-menu.show {
+    visibility: visible; // Mostra o dropdown
+    opacity: 1;
+  }
+}
+
+// Elementos auxiliares (como Clima)
+.climate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #004a9f;
 }
