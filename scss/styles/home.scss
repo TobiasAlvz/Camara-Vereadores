@@ -21,8 +21,24 @@ img {
       border-radius: 10px; // Borda arredondada para suavizar
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Sombra para destaque
+      position: relative;
 
       .carousel-item {
+        transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out; // Animação suave na troca
+        opacity: 0;
+        transform: scale(0.95); // Escala inicial para criar efeito de zoom
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &.active {
+          opacity: 1;
+          transform: scale(1); // Escala final
+          position: relative; // Ativo ocupa o espaço principal
+        }
+
         img {
           width: 100%;
           height: 100%;
@@ -69,7 +85,6 @@ img {
     }
   }
 }
-
 
 .news-container {
   display: flex;
@@ -183,165 +198,286 @@ img {
 }
 
 .vereadores {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); // Fundo suave
+  padding: 3rem 1rem;
+  border-radius: 20px;
 
   h2 {
-    font-size: 32px;
+    font-size: 2.5rem;
     font-weight: bold;
-    text-align: left;
-    margin-bottom: 30px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #007bff;
+      margin: 10px auto 0;
+      border-radius: 10px;
+    }
   }
 
-  .col-md-3 {
-    margin: 5px;
-    padding: 0;
-    height: auto;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; // Espaçamento entre os cartões
+    justify-content: center;
+  }
 
-    width: 25%;
+  .col-md-4,
+  .col-lg-3 {
+    max-width: 300px; // Limita o tamanho máximo do cartão
+    flex: 1 1 300px; // Garante que os cartões se ajustem proporcionalmente
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-10px); // Elevação do cartão
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); // Sombra ao passar o mouse
+    }
 
     .card {
-      cursor: pointer;
-      border: 1px solid #3a3a3a;
-      border-radius: 10px;
+      border: none;
+      border-radius: 15px;
       overflow: hidden;
-      position: relative;
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      background: #ffffff;
+      transition: background-color 0.3s ease, transform 0.3s ease;
 
-      .card-title {
-        font-size: 14px;
-        margin: 0;
-        text-align: center;
+      &:hover {
+        background: linear-gradient(
+          135deg,
+          #007bff,
+          #6c63ff
+        ); // Gradiente ao passar o mouse
       }
 
       img {
-        padding: 10px;
         width: 100%;
-        height: 100%;
+        height: 200px;
         object-fit: cover;
         transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1); // Zoom suave na imagem
+        }
       }
 
       .card-body {
-        padding: 10px;
+        text-align: center;
+        padding: 1rem;
+        background: #f8f9fa;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #007bff; // Fundo azul no hover
+          color: #fff;
+        }
 
         .card-title {
-          font-size: 18px;
-          margin: 0;
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #2c3e50;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #ffffff; // Texto branco no hover
+          }
         }
       }
+    }
+
+    .card img {
+      width: 100%;
+      height: auto; // Permite que a altura se ajuste automaticamente à largura
+      object-fit: contain; // Garante que toda a imagem seja visível sem cortes
+      transition: transform 0.3s ease;
 
       &:hover {
-        img {
-          transform: scale(1.1);
-        }
-
-        &:after {
-          opacity: 1;
-        }
-
-        .card-body {
-          transform: translateY(-50%);
-        }
-
-        .card-title {
-          color: #007bff;
-        }
+        transform: scale(1.05); // Zoom suave sem cortar
       }
+    }
 
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        opacity: 0;
-        transition: opacity 0.3s ease;
+    // Adiciona um brilho sutil ao cartão
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.2),
+        rgba(0, 0, 0, 0)
+      );
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+
+  // Responsividade
+  @media (max-width: 1024px) {
+    .col-md-4,
+    .col-lg-3 {
+      max-width: 250px;
+
+      .card img {
+        height: 180px;
       }
+    }
+
+    h2 {
+      font-size: 2rem;
     }
   }
 
   @media (max-width: 768px) {
-    .col-md-3 {
-      height: 250px;
-      width: 110px;
+    .col-md-4,
+    .col-lg-3 {
+      max-width: 200px;
+
+      .card img {
+        height: 150px;
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
     }
   }
 
   @media (max-width: 480px) {
-    .col-md-3 {
-      height: 250px;
-      width: 110px;
+    .col-md-4,
+    .col-lg-3 {
+      max-width: 150px;
+
+      .card img {
+        height: 120px;
+      }
+
+      .card-body {
+        padding: 0.5rem;
+
+        .card-title {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
 
 .camara-digital {
-  display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  padding-top: 100px;
-  margin-bottom: 30px;
+  display: flex; // Define o container como Flexbox
+  flex-wrap: wrap; // Permite que os cartões quebrem para novas linhas, se necessário
+  justify-content: center; // Centraliza os cartões horizontalmente
+  gap: 2rem; // Espaçamento uniforme entre os cartões
+  padding: 4rem 2rem; // Espaçamento interno
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  min-height: 100vh; // Garante que a seção ocupe pelo menos a altura total da tela
 
   h1 {
+    width: 100%; // Garante que o título ocupe toda a largura
+    text-align: center; // Centraliza o texto do título
     font-size: 3rem;
-    margin-bottom: 30px;
-    text-align: center;
-    width: 100%;
     font-weight: bold;
     color: #007bff;
+    margin-bottom: 2rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #007bff;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+  }
+
+  .container {
+    display: flex; // Define o container interno como Flexbox
+    flex-wrap: wrap; // Permite quebra de linha para os cartões
+    justify-content: center; // Centraliza os cartões horizontalmente
+    align-items: flex-start; // Alinha os cartões ao topo
+    gap: 2rem; // Espaçamento entre os cartões
   }
 
   .card {
+    width: 300px; // Largura fixa para os cartões
     border: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
     .card-body {
-      padding: 1rem;
+      text-align: center;
+      padding: 1.5rem;
+
+      svg {
+        margin-bottom: 1rem;
+        width: 32px;
+        height: 32px;
+        color: #007bff;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #0056b3;
+        }
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #2c3e50;
+      }
+
+      .card-text {
+        font-size: 1rem;
+        color: #495057;
+        margin-bottom: 1.5rem;
+      }
     }
 
-    .card-title {
-      font-size: 1.5rem;
+    .btn-primary {
       font-weight: bold;
-      margin-bottom: 1rem;
-    }
+      color: #ffffff;
+      background-color: #007bff;
+      border: none;
+      padding: 0.5rem 1rem;
 
-    .card-text {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
+      &:hover {
+        background-color: #0056b3;
+      }
     }
 
     .list-group-item {
       border: none;
-      padding: 0.5rem 1rem;
-    }
+      padding: 0.75rem 1rem;
 
-    .card-link {
-      color: #007bff;
-      font-weight: bold;
-      text-decoration: none;
-      transition: all 0.2s ease-in-out;
+      .card-link {
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
 
-      &:hover {
-        color: #0056b3;
+        &:hover {
+          color: #0056b3;
+        }
       }
-    }
-  }
-
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    font-weight: bold;
-
-    &:hover {
-      background-color: #0056b3;
-      border-color: #0056b3;
     }
   }
 }
@@ -349,136 +485,156 @@ img {
 .pluss {
   padding: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: $primary-color;
+  justify-content: center; // Centraliza horizontalmente
+  align-items: center; // Alinha os itens no centro verticalmente
+  gap: 2rem; // Espaçamento uniforme entre os cartões
+  background-color: #007bff; // Cor de fundo principal
 
   .card {
-    width: $card-width;
-    height: $card-height;
-    border-radius: 4px;
-    background: white;
+    width: 200px; // Define uma largura padrão para os cartões
+    height: 200px; // Altura uniforme para os cartões
+    border-radius: 10px; // Bordas arredondadas para suavizar o design
+    background: #ffffff; // Fundo branco
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0.4em;
+    flex-direction: column; // Layout vertical
+    justify-content: center; // Centraliza o conteúdo dentro do cartão
+    align-items: center; // Centraliza o conteúdo dentro do cartão
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para destaque
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Animação suave
+
+    &:hover {
+      transform: translateY(-10px); // Elevação no hover
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Sombra mais intensa no hover
+    }
 
     p {
-      height: 100%;
-      flex: 1;
-      overflow: hidden;
-      cursor: pointer;
-      border-radius: 2px;
-      transition: all 0.5s;
-      background: #fff;
-      border: 1px solid $secondary-color;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 16px;
+      margin: 0;
+      font-size: 1rem;
       font-weight: bold;
+      color: #007bff;
+      text-align: center;
 
-      span {
-        color: #0056b3;
-        min-width: 14em;
-        padding: 0.5em;
-        text-align: center;
-        transform: rotate(-90deg);
-        transition: all 0.5s;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+      a {
+        text-decoration: none;
+        color: #0056b3; // Cor do link
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #003a7b; // Cor do link no hover
+        }
       }
 
-      &:hover {
-        flex: 4;
-      }
+      svg {
+        margin-top: 1rem;
+        width: 24px;
+        height: 24px;
+        fill: #0056b3; // Cor do ícone
+        transition: fill 0.3s ease;
 
-      &:hover span {
-        transform: rotate(0);
-      }
-    }
-
-    @media only screen and (max-width: 992px) {
-      width: 25%;
-    }
-
-    @media only screen and (max-width: 768px) {
-      width: 35%;
-      p {
-        font-size: 10px;
-      }
-      span {
-        font-size: 5px;
-      }
-    }
-  }
-}
-
-.docs {
-  background-color: #f8f9fa;
-  padding: 5vw;
-
-  /* Estilos para títulos */
-  h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #343a40;
-    text-align: center;
-  }
-
-  /* Estilos para cards */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    /* Estilos para colunas de tamanho médio */
-    .col-md-4 {
-      padding: 0 3vw;
-      margin-bottom: 2rem;
-      width: 50%;
-
-      /* Estilos para cards internos */
-      .card {
-        width: 100%;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-        cursor: pointer;
-
-        /* Estilos para conteúdo interno do card */
-        .card-body {
-          font-size: 1.2rem;
-          font-weight: bold;
-          color: #3d3c3c;
-          text-align: center;
+        &:hover {
+          fill: #003a7b; // Cor do ícone no hover
         }
       }
     }
   }
 
-  /* Breakpoints para adaptar o layout em diferentes tamanhos de tela */
-  @media only screen and (max-width: 1200px) {
-    .row .col-md-4 {
-      width: 33.33%;
-    }
-  }
-
+  // Responsividade para telas menores
   @media only screen and (max-width: 992px) {
-    .row .col-md-4 {
-      width: 50%;
+    flex-wrap: wrap; // Permite que os cartões quebrem para novas linhas
+    gap: 1.5rem;
+
+    .card {
+      width: 150px;
+      height: 150px;
+
+      p {
+        font-size: 0.9rem;
+      }
     }
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 2vw;
+    padding: 20px;
+
+    .card {
+      width: 120px;
+      height: 120px;
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+.docs {
+  background-color: #f8f9fa; // Fundo neutro
+  padding: 3rem 2rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #007bff;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap; // Permite que os itens quebrem para novas linhas
+    justify-content: center; // Centraliza os itens horizontalmente
+    gap: 2rem; // Espaçamento uniforme entre os cartões
+
+    .col-md-4 {
+      flex: 1 1 280px; // Largura adaptável dos cartões
+      max-width: 300px;
+
+      .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #ffffff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-body {
+          font-size: 1.1rem;
+          font-weight: bold;
+          color: #3d3c3c;
+          text-align: center;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // Responsividade para telas menores
+  @media only screen and (max-width: 992px) {
+    .row .col-md-4 {
+      flex: 1 1 200px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .row {
+      gap: 1.5rem;
+    }
 
     .row .col-md-4 {
-      width: 100%;
+      flex: 1 1 100%;
     }
   }
 }
