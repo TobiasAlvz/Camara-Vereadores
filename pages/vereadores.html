@@ -8,930 +8,411 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-      />
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="shortcut icon" href="../img/favicon.png" type="favicon" />
     <title>Veriadores</title>
   </head>
   <body>
-    <section id="top-head">
+
+    <section id="top-head" itemscope
+      itemtype="https://turmalina.tcepb.tc.br/documentation/BudgetRevenue">
       <div class="today">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-clock"
-          viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"
+          aria-hidden="true" focusable="false">
           <path
-            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0
-            .496-.868L8 8.71V3.5z"
-            />
-            <path
-              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1
-              14 0z"
-              />
-            </svg>
-            <span id="today"></span>
-          </div>
-          <div></div>
-        </section>
+            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+          <path
+            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+        </svg>
+        <span id="today" aria-label="Data de hoje"></span>
+      </div>
+    </section>
 
-        <header class="sticky-top">
-          <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-            <div
-              class="container d-flex justify-content-around
-              align-content-around">
-              <a href="../index.html"><img
-                  src="../img/logo-full-removebg-preview.png" alt="" srcset=""
-                  /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    <header id="header" class="sticky">
+      <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-white"
+        aria-label="Navegação principal">
+        <div
+          class="container d-flex justify-content-around align-content-around">
+          <!-- Logotipo -->
+          <a href="/index.html" class="navbar-brand">
+            <img src="/img/logo-full-removebg-preview2.png"
+              alt="Logotipo Câmara Municipal de Tavares" />
+          </a>
 
-              <div
-                class="collapse navbar-collapse justify-content-center"
-                id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex mb- mb-lg-0">
-                  <li class="nav-item mb-0">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0"
-                      active
-                      pb-0
-                      aria-current="page"
-                      href="../index.html">Início</a>
+          <!-- Botão Toggle para Mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu Principal -->
+          <div class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="index.html">Início</a>
+              </li>
+              <!-- Submenu A Câmara -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownCamara"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  A Câmara
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownCamara">
+                  <li>
+                    <a class="dropdown-item" href="/docs/regimentoInterno.pdf"
+                      target="_blank">Regimento Interno</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false">A Câmara</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="../docs/regimentoInterno.pdf">Regimento
-                          Interno</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="vereadores.html">Vereadores</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="consulta.html"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-toggle="dropdown">Consulta</a>
-                    <ul
-                      class="dropdown-menu hover"
-                      aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="consulta.html">Agenda da
-                          Câmara</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item"
-                          href="consulta.html#documentos">Documentos</a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          class="dropdown-item"
-                          href="../docs/PCA.pdf">PCA
-                          - Prestação de Contas Anuais</a>
-                      </li>
-
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="../img/lei de acesso a informacao.pdf">Lei de
-                          Acesso a Informação</a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          class="dropdown-item"
-                          href="../docs/lei-organica.pdf">Lei
-                          Orgânica</a>
-                      </li>
-
-
-
-                      <li>
-                        <a class="dropdown-item" href="#vereadores">SIC</a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="https://tavares.pb.gov.br/assuntos/portal-da-transparencia">Transparência
-                          Fiscal</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a
-                      id="nav-link"
-                      class="nav-link active pb-0 dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-toggle="dropdown">
-                      Informativos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="diario.html">Diário
-                          Oficial</a>
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="informativos.html#news">Notícias</a>
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="informativos.html#faq">Perguntas
-                          Frequentes</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      id="nav-link"
-                      class="nav-link active me-3 pb-0"
-                      href="contato.html">Fale Conosco</a>
+                  <li>
+                    <a class="dropdown-item"
+                      href="vereadores.html">Vereadores</a>
                   </li>
                 </ul>
-              </div>
-
-              <div class="climate">
-                <span id="climate"></span>
-              </div>
-            </div>
-          </nav>
-        </header>
-
-        <section>
-          <h1>Vereadores</h1>
-          <div id="joseWilson" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/Jose Wilson Lopes.png"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Nome do Candidato: José Wilson Lopes</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 26/12/1978</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">Quantidade de Votos: 712 votos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:
-                    <a target="_blank"
-                      href="mailto:wilsonlopes.vereador2@gmail.com">wilsonlopes.vereador2@gmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">
-                    Telefone: <a href="tel: (83) 9 9866-9862">(83) 9 9866-9862</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">
-                    Redes Sociais: Instagram, @wilson.sil10 e facebook, Wilson
-                    Silvestre
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Vereador</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">Grau de Instrução: Superior Completo</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">Comissão:</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div id="lerina" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/Lerina.png"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">
-                    Nome do Candidato: Lenira Almeida Marinho (Vice-presidente
-                    da
-                    Câmara)
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 25/01/1964</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">Quantidade de Votos: X votos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:
-                    <a href="mailto:leniraalmeidavereadora@gmail.com">leniraalmeidavereadora@gmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">
-                    Telefone: <a href="tel: (83) 9 9920-2090">(83) 9 9920-2090</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">
-                    Redes Sociais: Instagram, @leniraccv e facebook, Lenira
-                    Almeida
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Vereadora</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">Grau de Instrução: Ensino Médio Completo</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">
-                    Comissão: COMISSÃO DE FINANÇAS E ORÇAMENTOS(Relatora
-                    Comissão) -
-                    COMISSÃO DE LEGISLAÇÃO, JUSTIÇA E REDAÇÃO FINAL(Presidente
-                    da
-                    Comissão)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div id="marcelo" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/Marcelo Bezerra de Sousa.png"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">
-                    Nome do Candidato: Marcelo Bezerra de Sousa (2º Secretário)
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 04/12/1984</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">
-                    Quantidade de Votos: Quantidade de votos: 634 votos
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:
-                    <a href="mailto:marcelobezerra.vereador@gmail.com">marcelobezerra.vereador@gmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">
-                    Telefone: <a href="tel: (83) 9 9843-3970">(83) 9 9843-3970</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">
-                    Redes Sociais: instagram, marcelobezerradesousa e facebook,
-                    Marcelo Bezerra
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Vereador</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">Grau de Instrução: Ensino Fundamental Completo</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">
-                    Comissão: COMISSÃO DE LEGISLAÇÃO, JUSTIÇA E REDAÇÃO
-                    FINAL(Relator da Comissão) - COMISSÃO DE OBRAS, SERVIÇO
-                    PÚBLICO,
-                    AGROINDUSTRIAIS, COMÉRCIO E TURISMO(Membro)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div id="vitoria" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/Vitória Marques de Sousa.jpg"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Nome do Candidato: Vitória Marques de Sousa</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 06/09/1999</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">Quantidade de Votos: 399 votos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:
-                    <a href="mailto:vereadoravitoriamarques@gmail.com">vereadoravitoriamarques@gmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">
-                    Telefone: <a href="tel: (83) 9 9634-2677">(83) 9 9634-2677</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">
-                    Redes Sociais: instagram, @vereadoravitoriamarques e
-                    facebook,
-                    Vitória Marques de Sousa
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Estudante/Bacharelanda em Direito</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">Grau de Instrução: Ensino Superior Incompleto</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">Comissão: Nome da Comissão</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div id="batista" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/João Batista dos Santos.jpg"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Nome do Candidato: João Batista dos Santos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 08/11/1973</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">Quantidade de Votos: 60 votos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:
-                    <a href="mailto:batistadaloja@gmail.com">batistadaloja@gmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">
-                    Telefone: <a href="tel: (83) 9 9943-5786">(83) 9 9943-5786</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">Redes Sociais: facebook, Batista de Cristin</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Empresário</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">
-                    Grau de Instrução: Ensino Fundamental Incompleto
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">Comissão:</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div id="jorge" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/Jorge Leite de Sousa.png"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Nome do Candidato: Jorge Leite de Sousa</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 05/03/1968</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">Quantidade de Votos: 615 votos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:
-                    <a href="mailto:jorgueleite123@gmail.com">jorgueleite123@gmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">
-                    Telefone: <a href=" (83) 9 9832-5510">(83) 9 9832-5510</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">
-                    Redes Sociais: instagram, @jorgeleite.083 e facebook, Jorge
-                    Leite
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Agricultor</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">Grau de Instrução: Ensino Médio Completo</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">
-                    Comissão: COMISSÃO DE OBRAS, SERVIÇO PÚBLICO,
-                    AGROINDUSTRIAIS,
-                    COMÉRCIO E TURISMO(Presidente da Comissão) - COMISSÃO DE
-                    EDUCAÇÃO, SAÚDE E ASSISTÊNCIA SOCIAL(Presidente da Comissão)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div id="adao" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/Adão Luiz de Almeida.jpg"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">
-                    Nome do Candidato: Adão Luiz de Almeida (1º Secretário)
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 09/06/1978</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">Quantidade de Votos: 1.029 votos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:<a target="_blank" href="mailto:
-                      dao_luiz@hotmail.com">
-                      dao_luiz@hotmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">Telefone: (83) 9 9646-9939</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">
-                    Redes Sociais: instagram, @adao_luiz_ e facebook, Dão João
-                    Cosme
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Servidor Público Municipal</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">Grau de Instrução: Superior Completo</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">Comissão:</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div id="edsonLeite" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/Edson Leite de Lima.png"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Nome do Candidato: Edson Leite de Lima</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 16/12/1971</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">Quantidade de Votos: 902 votos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:
-                    <a href="mailto:lourinholeitelima@gmail.com">lourinholeitelima@gmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">
-                    Telefone: <a href="tel: (83) 9 9600-5672">(83) 9 9600-5672</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">
-                    Redes Sociais: Instagram, @edsonlimaedson e facebook, Edson
-                    Lima
-                    Edson
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Servidor Público Municipal</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">Grau de Instrução: Ensino Médio Incompleto</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">
-                    Comissão: COMISSÃO DE FINANÇAS E ORÇAMENTOS(Membro) -
-                    COMISSÃO
-                    DE OBRAS, SERVIÇO PÚBLICO, AGROINDUSTRIAIS, COMÉRCIO E
-                    TURISMO(Relator da Comissão)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div id="edsonCordeiro" class="container">
-            <div class="row">
-              <div class="col-md-2">
-                <img
-                  src="../img/José Edson Cordeiro.png"
-                  class="img-fluid"
-                  alt="Foto do Candidato"
-                  />
-              </div>
-
-              <div class="col-md-9">
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">
-                    Nome do Candidato: José Edson Cordeiro (Presidente da
-                    Câmara)
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-birthday-cake me-2"></i>
-                  <p class="mb-0">Data de Nascimento: 18/04/1965</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-flag me-2"></i>
-                  <p class="mb-0">Partido: Republicanoso</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-vote-yea me-2"></i>
-                  <p class="mb-0">Quantidade de Votos: 608 votos</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-envelope me-2"></i>
-                  <p class="mb-0">
-                    Email:
-                    <a href="mailto:edsoncordeiropresidente@gmail.com">edsoncordeiropresidente@gmail.com</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-phone me-2"></i>
-                  <p class="mb-0">
-                    Telefone: <a href="tel: (83) 9 9856-8996">(83) 9 9856-8996</a>
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-share-alt me-2"></i>
-                  <p class="mb-0">
-                    Redes Sociais: Instagram, @edsoncordeirojose e facebook,
-                    Edson
-                    Cordeiro
-                  </p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-briefcase me-2"></i>
-                  <p class="mb-0">Ocupação: Vereador</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-graduation-cap me-2"></i>
-                  <p class="mb-0">Grau de Instrução:Ensino Médio Completo</p>
-                </div>
-
-                <div class="d-flex align-items-center text-muted">
-                  <i class="fas fa-users me-2"></i>
-                  <p class="mb-0">
-                    Comissão: COMISSÃO DE FINANÇAS E ORÇAMENTOS(Presidente da
-                    Comissão)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <footer class="bg-dark text-light py-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 mb-5 mb-md-0 text-center">
-                <h4>CNPJ.: 08.560.799/0001-82</h4>
-                <p class="mb-0">Horário de Atendimento</p>
-                <p>Segunda à Sexta: De 07:00 às 13:00</p>
-              </div>
-              <div class="col-md-4 mb-5 mb-md-0 text-center">
-                <h4>Endereço Físico</h4>
-                <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
-                <p>Tavares / PB - CEP: 58753-000</p>
-              </div>
-              <div class="col-md-4 text-center">
-                <h4>Telefones Úteis</h4>
-                <a href="tel: (83) 3450-1023">
-                  <p>(83) 3450-1023</p>
+              </li>
+              <!-- Submenu Consulta -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="dropdownConsulta" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Consulta
                 </a>
-                <a href="tel:(83) 99929-4045">
-                  <p>(83) 99929-4045</p>
+                <ul class="dropdown-menu" aria-labelledby="dropdownConsulta">
+                  <li><a class="dropdown-item"
+                      href="consulta.html">Agenda da Câmara</a></li>
+                  <li><a class="dropdown-item"
+                      href="consulta.html#documentos">Documentos</a></li>
+                  <li><a class="dropdown-item" href="/docs/PCA.pdf"
+                      target="_blank">PCA - Prestação de Contas Anuais</a></li>
+                  <li><a class="dropdown-item"
+                      href="/img/lei de acesso a informacao.pdf"
+                      target="_blank">Lei de Acesso a Informação</a></li>
+                  <li><a class="dropdown-item" href="/docs/lei-organica.pdf"
+                      target="_blank">Lei Orgânica</a></li>
+                  <li><a class="dropdown-item" href="#vereadores">SIC</a></li>
+                  <li>
+                    <a class="dropdown-item"
+                      href="https://tavares.pb.gov.br/assuntos/portal-da-transparencia"
+                      target="_blank">
+                      Transparência Fiscal
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Submenu Informativos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="dropdownInformativos" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Informativos
                 </a>
-              </div>
-            </div>
-            <hr class="my-5" />
-            <p class="mt-5 text-center">
-              © 2023 Câmara Municipal de Tavares. Todos os direitos reservados.
-            </p>
+                <ul class="dropdown-menu"
+                  aria-labelledby="dropdownInformativos">
+                  <li><a class="dropdown-item" href="diario.html">Diário
+                      Oficial</a></li>
+                  <li><a class="dropdown-item"
+                      href="informativos.html#news">Notícias</a></li>
+                  <li><a class="dropdown-item"
+                      href="informativos.html#faq">Perguntas
+                      Frequentes</a></li>
+                </ul>
+              </li>
+              <!-- Fale Conosco -->
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Fale Conosco</a>
+              </li>
+            </ul>
           </div>
-        </footer>
 
-        <!-- Script animation -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
+          <!-- Clima Atual -->
+          <div class="climate" aria-label="Informação do clima">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"
+              fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16"
+              aria-hidden="true" focusable="false">
+              <path
+                d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z" />
+              <path
+                d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
+            </svg>
+            <span id="climate" aria-label="Informação climática"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="vereadores">
+      <h1 class="text-center mb-5">Vereadores</h1>
+
+      <!-- Dão de João de Cosme -->
+      <div id="daoDeJoaoDeCosme" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/dao_joao_cosme.png"
+              class="img-fluid rounded shadow" alt="Dão de João de Cosme">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Dão de João de Cosme</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              Republicanos</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              981 (10,57%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Socorrinha -->
+      <div id="socorrinha" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/socorrinha.png" class="img-fluid rounded shadow"
+              alt="Socorrinha">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Socorrinha</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              PSB</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              879 (9,47%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Professor Gilson da Jurema -->
+      <div id="professorGilson" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/professor_gilson.png"
+              class="img-fluid rounded shadow" alt="Professor Gilson da Jurema">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Professor Gilson da Jurema</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              Republicanos</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              800 (8,62%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Jorge Guabiraba -->
+      <div id="jorgeGuabiraba" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/jorge_guabiraba.png"
+              class="img-fluid rounded shadow" alt="Jorge Guabiraba">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Jorge Guabiraba</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              PSB</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              717 (7,73%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Adailton Dantas -->
+      <div id="adailtonDantas" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/adailton_dantas.png"
+              class="img-fluid rounded shadow" alt="Adailton Dantas">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Adailton Dantas</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              PSB</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              706 (7,61%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Lourinho -->
+      <div id="lourinho" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/lourinho.png" class="img-fluid rounded shadow"
+              alt="Lourinho">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Lourinho</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              Republicanos</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              626 (6,74%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Wilson do Silvestre -->
+      <div id="wilsonDoSilvestre" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/wilson_silvestre.png"
+              class="img-fluid rounded shadow" alt="Wilson do Silvestre">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Wilson do Silvestre</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              Republicanos</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              620 (6,68%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Graça do Silvestre -->
+      <div id="gracaDoSilvestre" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/graca_silvestre.png"
+              class="img-fluid rounded shadow" alt="Graça do Silvestre">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Graça do Silvestre</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              PSB</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              595 (6,41%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Branco da Viúva -->
+      <div id="brancoDaViuva" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/branco_viuva.png" class="img-fluid rounded shadow"
+              alt="Branco da Viúva">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Branco da Viúva</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              Republicanos</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              595 (6,41%)</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Marcelo de Zeca -->
+      <div id="marceloDeZeca" class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/marcelo_de_zeca.png"
+              class="img-fluid rounded shadow" alt="Marcelo de Zeca">
+          </div>
+          <div class="col-md-10">
+            <div class="mb-2"><i
+                class="fas fa-user me-2 text-primary"></i><strong>Nome:</strong>
+              Marcelo de Zeca</div>
+            <div class="mb-2"><i
+                class="fas fa-flag me-2 text-primary"></i><strong>Partido:</strong>
+              PSB</div>
+            <div class="mb-2"><i
+                class="fas fa-vote-yea me-2 text-primary"></i><strong>Votos:</strong>
+              706 (7,61%)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-md-0 text-center">
+            <h4>CNPJ.: 08.560.799/0001-82</h4>
+            <p class="mb-0">Horário de Atendimento</p>
+            <p>Segunda à Sexta: De 07:00 às 13:00</p>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0 text-center">
+            <h4>Endereço Físico</h4>
+            <p class="mb-0">Rua Manoel Lima, 228, Centro</p>
+            <p>Tavares / PB - CEP: 58753-000</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h4>Telefones Úteis</h4>
+            <a href="tel: (83) 3450-1023">
+              <p>(83) 3450-1023</p>
+            </a>
+            <a href="tel:(83) 99929-4045">
+              <p>(83) 99929-4045</p>
+            </a>
+          </div>
+        </div>
+        <hr class="my-5" />
+        <p class="mt-5 text-center">
+          © 2025 Câmara Municipal de Tavares. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
       AOS.init();
     </script>
-        <!-- Bootstrap Js -->
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-          crossorigin="anonymous"></script>
+ 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
 
-        <script src="../script.js"></script>
-      </body>
-    </html>
+    <script src="../script.js"></script>
+  </body>
+</html>
