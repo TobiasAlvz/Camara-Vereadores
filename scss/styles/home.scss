@@ -65,23 +65,73 @@ img {
       }
     }
   }
+  // Responsividade para o carousel
+  @media (max-width: 1024px) {
+    .carousel-inner {
+      height: 400px; // Ajuste para telas maiores, mas abaixo do padrão desktop
+    }
+  }
 
-  // Responsividade para diferentes telas
   @media (max-width: 768px) {
     .carousel-inner {
-      height: 300px; // Ajuste para telas médias
+      height: 300px; // Altura reduzida para tablets e dispositivos intermediários
+    }
+
+    .carousel-item img {
+      object-fit: cover; // Ajusta o enquadramento da imagem
+      width: 100%; // Mantém a largura
+      height: 300px; // Garante proporção consistente
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 40px;
+      height: 40px; // Tamanho intermediário para controles
     }
   }
 
   @media (max-width: 576px) {
     .carousel-inner {
-      height: 200px; // Ajuste para telas pequenas
+      height: 200px; // Altura reduzida para dispositivos menores
+    }
+
+    .carousel-item img {
+      object-fit: contain; // Garante que toda a imagem seja visível, sem cortes
+      width: 100%;
+      height: 200px; // Altura consistente com o carousel
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       width: 30px;
-      height: 30px; // Ícones menores em telas pequenas
+      height: 30px; // Controles ainda menores
+    }
+
+    .carousel-caption {
+      font-size: 0.9rem; // Reduz tamanho do texto nas legendas
+      padding: 10px; // Ajusta espaçamento para telas pequenas
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel-inner {
+      height: 180px; // Altura ainda menor para telas muito pequenas
+    }
+
+    .carousel-item img {
+      object-fit: cover; // Mantém o foco na parte central da imagem
+      height: 180px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 25px;
+      height: 25px; // Ícones bem pequenos para se ajustar a dispositivos compactos
+    }
+
+    .carousel-caption {
+      font-size: 0.8rem; // Fonte menor para legendas em dispositivos muito pequenos
+      padding: 5px; // Reduz o espaçamento das legendas
     }
   }
 }
