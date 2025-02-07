@@ -18,120 +18,102 @@ img {
     .carousel-inner {
       width: 100%;
       height: 400px; // Altura padrão do carrossel
-      border-radius: 10px; // Borda arredondada para suavizar
+      border-radius: 10px; // Bordas arredondadas para suavizar
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Sombra para destaque
       position: relative;
+    }
 
-      .carousel-item {
-        transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out; // Animação suave na troca
-        opacity: 0;
-        transform: scale(0.95); // Escala inicial para criar efeito de zoom
-        position: absolute;
-        top: 0;
-        left: 0;
+    .carousel-item {
+      position: relative;
+      height: 100%;
+      transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+      opacity: 0;
+      transform: scale(0.95);
+
+      &.active {
+        opacity: 1;
+        transform: scale(1);
+        position: relative;
+      }
+
+      img {
         width: 100%;
         height: 100%;
-
-        &.active {
-          opacity: 1;
-          transform: scale(1); // Escala final
-          position: relative; // Ativo ocupa o espaço principal
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; // Ajusta a imagem ao tamanho do carrossel
-        }
+        object-fit: cover;       // Garante que a imagem cubra todo o espaço
+        object-position: center; // Centraliza a imagem
       }
     }
 
     .carousel-control-prev,
     .carousel-control-next {
-      width: 5%; // Ajuste para reduzir a largura dos botões
+      width: 5%; // Largura reduzida para os botões
 
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
-        background-color: rgba(0, 0, 0, 0.5); // Fundo dos ícones
-        border-radius: 50%; // Ícones redondos
+        background-color: rgba(0, 0, 0, 0.5); // Fundo semi-transparente
+        border-radius: 50%;
         width: 40px;
         height: 40px;
-        transition: background-color 0.3s ease; // Animação suave
+        transition: background-color 0.3s ease;
 
         &:hover {
-          background-color: rgba(0, 0, 0, 0.8); // Destaque ao passar o mouse
+          background-color: rgba(0, 0, 0, 0.8); // Fundo mais escuro ao passar o mouse
         }
       }
     }
   }
+
   // Responsividade para o carousel
   @media (max-width: 1024px) {
     .carousel-inner {
-      height: 400px; // Ajuste para telas maiores, mas abaixo do padrão desktop
+      height: 400px;
     }
   }
 
   @media (max-width: 768px) {
     .carousel-inner {
-      height: 300px; // Altura reduzida para tablets e dispositivos intermediários
-    }
-
-    .carousel-item img {
-      object-fit: cover; // Ajusta o enquadramento da imagem
-      width: 100%; // Mantém a largura
-      height: 300px; // Garante proporção consistente
+      height: 300px;
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       width: 40px;
-      height: 40px; // Tamanho intermediário para controles
+      height: 40px;
     }
   }
 
   @media (max-width: 576px) {
     .carousel-inner {
-      height: 200px; // Altura reduzida para dispositivos menores
-    }
-
-    .carousel-item img {
-      object-fit: contain; // Garante que toda a imagem seja visível, sem cortes
-      width: 100%;
-      height: 200px; // Altura consistente com o carousel
+      height: 200px;
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       width: 30px;
-      height: 30px; // Controles ainda menores
+      height: 30px;
     }
 
     .carousel-caption {
-      font-size: 0.9rem; // Reduz tamanho do texto nas legendas
-      padding: 10px; // Ajusta espaçamento para telas pequenas
+      font-size: 0.9rem;
+      padding: 10px;
     }
   }
 
   @media (max-width: 480px) {
     .carousel-inner {
-      height: 180px; // Altura ainda menor para telas muito pequenas
-    }
-
-    .carousel-item img {
-      object-fit: cover; // Mantém o foco na parte central da imagem
       height: 180px;
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       width: 25px;
-      height: 25px; // Ícones bem pequenos para se ajustar a dispositivos compactos
+      height: 25px;
     }
 
     .carousel-caption {
-      font-size: 0.8rem; // Fonte menor para legendas em dispositivos muito pequenos
-      padding: 5px; // Reduz o espaçamento das legendas
+      font-size: 0.8rem;
+      padding: 5px;
     }
   }
 }
